@@ -1,0 +1,1707 @@
+﻿*{-webkit-margin-before: 0px;-webkit-margin-after: 0px;-webkit-margin-start: 0px;-webkit-margin-end: 0px;-webkit-padding-start: 0px;margin: 0;padding: 0;box-sizing: border-box;font-family: 'Microsoft YaHei','微软雅黑',sans-serif;}
+li{list-style: none;}
+/*font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;*/
+.fl {*display: inline;float: left!important;}
+.fr {*display: inline;float: right!important;}
+a{color: inherit;text-decoration: none;}
+.clearfix {*zoom:1;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;}
+.both {clear: both;}
+.nodis{display: none!important;}
+.tc {text-align: center!important;}
+.tl {text-align: left!important;}
+.tr {text-align: right!important;}
+.vm {vertical-align: middle;}
+.vb {vertical-align: bottom;}
+.oh {overflow: hidden!important;}
+.rel {position: relative!important;}
+.abs {position: absolute!important;}
+.text-overflow {overflow: hidden;white-space: nowrap;text-overflow: ellipsis;-ms-text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url(ellipsis.xml#ellipsis)}
+.mt20{margin-top: 20px!important;}
+.bgef{background-color:#efefef!important;}
+.colorb0{color: #b08751!important;}
+.fw{font-weight: bold!important;}
+body{min-width: 1200px;}
+.container{width: 1200px;margin: 0 auto;}
+/*公共*/
+.commonTitle{
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 2px solid rgba(90,90,90,0.25);
+	font-size: 24px;
+	color: #5a5a5a;
+	position: relative;
+}
+.commonTitle:before{
+	content: '';
+	width: 988px;
+	left: 50%;
+	margin-left: -494px;
+	height: 1px;
+	/*left: 0;*/
+	bottom: -1px;
+	position: absolute;
+	box-shadow: 0px 3px 3px rgba(155,155,155,0.2);
+}
+.commonTitle span{
+	position: relative;
+	padding-left: 24px;
+	font-weight: normal!important;
+}
+.commonTitle span:hover,
+.commonTitle a:hover{
+	color: #fe9927;
+}
+.commonTitle span:hover:before{
+	background-color: #fe9927;
+}
+.commonTitle span:before{
+	content: '';
+	position: absolute;
+	width: 4px;
+	height: 20px;
+	background-color: #5a5a5a;
+	top: 50%;
+	left: 0;
+	margin-top: -10px;
+}
+.commonTitle a{
+	text-decoration: none;
+	color: #acacac;
+	font-size: 16px;
+}
+.scal img{
+	-moz-transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	-ms-transition: 0.3s;
+	transition: 0.3s;
+	border: none;
+	outline: none;
+}
+.contentBox .books .sexBox .changeBox .bookInfo:hover .scal img,
+.dszq .books li:hover .scal img,
+.nanshengzhuanqu .books li .book:hover .scal img,
+.nanshengzhuanqu .singleBook:hover .scal img,
+.nvshengzhuanqu .books li .book:hover .scal img,
+.recommend ul li:hover .scal img{
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.bookShadow{
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+.recommend{
+	width: 230px;
+	height: 576px;
+	overflow: hidden;
+	border: 1px solid #e7e7e7;
+	background-color: #f9f9f9;
+}
+.recommend:hover .title{
+	background-color: #5a5a5a;
+	color: #fff;
+}
+.recommend .title{
+	font-size: 18px;
+	height: 60px;
+	line-height: 60px;
+	background-color: #e7e7e7;
+	padding-left: 13px;
+}
+.recommend .title .tabBox{
+	margin-top: 31px;
+	margin-right: 14px;
+}
+.recommend .title .tabBox span{
+	width: 26px;
+	height: 29px;
+	text-align: center;
+	cursor: pointer;
+	line-height: 29px;
+	font-size: 14px;
+	color: #828282;
+}
+.recommend .title .tabBox span.active{
+	background-color: #f9f9f9;
+	border-top: 2px solid #5a5a5a;
+	color: #5a5a5a;
+}
+.recommend:hover .title .tabBox span{
+	color: #fff;
+}
+.recommend:hover .title .tabBox span.active{
+	/*background-color: #efefef;*/
+	border-top: 2px solid #ee4848;
+	color: #5a5a5a;
+}
+.recommend:hover .title .tabBox span.active1{
+	background-color: #efefef;
+}
+.recommend ul li{
+	height: 42px;
+	line-height: 42px;
+	border-top: 1px solid #ececec;
+	padding: 0 13px;
+}
+.recommend ul li:first-child{
+	border-top: none;
+	height: 96px;
+	padding-top: 17px;
+}
+.recommend ul li:first-child img{
+	width: 48px;
+	height: 64px;
+}
+.recommend ul li:first-child .bookContent{
+	padding-left: 10px;
+	width: 120px;
+}
+.recommend ul li:first-child .bookContent .bookName{
+	font-size: 18px;
+	line-height: 18px;
+	color: #5a5a5a;
+}
+.recommend ul li:first-child .bookType,
+.recommend ul li:first-child .bookAuthor{
+	font-size: 12px;
+	color: #acacac;
+	margin-top: 8px;
+	line-height: 16px;
+}
+.recommend ul li:hover{
+	background-color: #efefef;
+}
+.recommend ul li:hover a,
+.recommend ul li:hover .bookContent .bookName{
+	color: #b08751;
+	font-size: 18px;
+}
+.recommend ul li span{
+	font-size: 12px;
+}
+.recommend ul li:hover span{
+	font-size: 14px;
+}
+.recommend ul li a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #868686;
+}
+.recommend ul li.more a{
+	font-size: 14px;
+}
+.recommend ul li span{
+	display: inline-block;
+	width: 14px;
+	height: 16px;
+	text-align: center;
+	line-height: 16px;
+	color: #bfbfbf;
+	margin-right: 10px;
+}
+.recommend ul li:nth-child(1) span{
+	color: #fff;
+	background-color: #ee4848;
+}
+.recommend ul li:nth-child(2) span{
+	color: #fff;
+	background-color: #fe9927;
+}
+.recommend ul li:nth-child(3) span{
+	color: #fff;
+	background-color: #3bcfff;
+}
+/*图片轮播*/
+[data-slide]{overflow:hidden; position:relative;height: 250px; width: 100%;}
+[data-slide] .hd{ overflow:hidden; position:absolute; right:10px; bottom:0px; z-index:110; }
+[data-slide] .hd ul{ overflow:hidden; zoom:1; float:left;  }
+[data-slide] .hd ul li{ -moz-transform: scale(0.5);-webkit-transform: scale(0.5);-o-transform: scale(0.5);-ms-transform: scale(0.5);transform: scale(0.5);font-size: 20px;list-style: none;float:left; width:20px;height:28px; text-align: center; background:rgba(0,0,0,0.3); cursor:pointer;color: #fff; }
+[data-slide] .hd ul li:last-child{margin-right: 0;}
+[data-slide] .hd ul li.on{ background:#f79526; }
+[data-slide] .bd{ position:relative; height:100%; z-index:0;   }
+[data-slide] .bd .tempWrap,
+[data-slide] .bd .tempWrap ul,
+[data-slide] .bd .tempWrap ul li{height: 100%;}
+[data-slide] .bd li{ list-style: none;zoom:1; vertical-align:middle; }
+[data-slide] .bd img{ width:100%; height:100%; display:block;  }
+[data-slide] .prev,
+[data-slide] .next{z-index:110;overflow: hidden; position:absolute; left:0; top:50%; margin-top:-21px; display:block; width:20px; height:42px; background:rgba(0,0,0,0.25) url(http://img.kanshu.com/2013/ksnew2016/images/slider-arrow.png) 0px 13px no-repeat;}
+[data-slide] .next{ left:auto; right:0; background-position:-20px 13px; }
+[data-slide] .prev:hover,
+[data-slide] .next:hover{ background-color: rgba(0,0,0,0.35);  }
+[data-slide] .prevStop{ display:none;  }
+[data-slide] .nextStop{ display:none;  }
+.bb-bookblock {
+	width: auto;
+	margin: 0 auto;
+	margin-left: -1px;
+	margin-right: -1px;
+	position: relative;
+	z-index: 100;
+	-moz-perspective: 1300px;
+	-webkit-perspective: 1300px;
+	-o-perspective: 1300px;
+	-ms-perspective: 1300px;
+	perspective: 1300px;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.bb-page {
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	-webkit-transition-property: -webkit-transform;
+	-o-transition-property: -o-transform;
+	-ms-transition-property: -ms-transform;
+	transition-property: transform;
+}
+.bb-vertical .bb-page {
+	width: 50%;
+	height: 100%;
+	left: 50%;
+	-moz-transform-origin: left center;
+	-webkit-transform-origin: left center;
+	-o-transform-origin: left center;
+	-ms-transform-origin: left center;
+	transform-origin: left center;
+}
+.bb-horizontal .bb-page {
+	width: 100%;
+	height: 50%;
+	top: 50%;
+	-webkit-transform-origin: center top;
+	-moz-transform-origin: center top;
+	-o-transform-origin: center top;
+	-ms-transform-origin: center top;
+	transform-origin: center top;
+}
+.bb-page > div,
+.bb-outer,
+.bb-content,
+.bb-inner {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.bb-vertical .bb-content {
+	width: 200%;
+}
+.bb-horizontal .bb-content {
+	height: 200%;
+}
+.bb-page > div {
+	width: 100%;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.bb-vertical .bb-back {
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.bb-horizontal .bb-back {
+	-webkit-transform: rotateX(-180deg);
+	-moz-transform: rotateX(-180deg);
+	-o-transform: rotateX(-180deg);
+	-ms-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+}
+.bb-outer {
+	width: 100%;
+	overflow: hidden;
+	z-index: 999;
+}
+.bb-overlay, 
+.bb-flipoverlay {
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.bb-flipoverlay {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.bb-bookblock.bb-vertical > div.bb-page:first-child,
+.bb-bookblock.bb-vertical > div.bb-page:first-child .bb-back {
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.bb-bookblock.bb-horizontal > div.bb-page:first-child,
+.bb-bookblock.bb-horizontal > div.bb-page:first-child .bb-back {
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	-o-transform: rotateX(180deg);
+	-ms-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+/* Content display */
+.bb-content {
+	background: #fff;
+}
+.bb-vertical .bb-front .bb-content {
+	left: -100%;
+}
+.bb-horizontal .bb-front .bb-content {
+	top: -100%;
+}
+/* Flipping classes */
+.bb-vertical .bb-flip-next,
+.bb-vertical .bb-flip-initial {
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+.bb-vertical .bb-flip-prev {
+	-webkit-transform: rotateY(0deg);
+	-moz-transform: rotateY(0deg);
+	-o-transform: rotateY(0deg);
+	-ms-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+.bb-horizontal .bb-flip-next,
+.bb-horizontal .bb-flip-initial {
+	-webkit-transform: rotateX(180deg);
+	-moz-transform: rotateX(180deg);
+	-o-transform: rotateX(180deg);
+	-ms-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+.bb-horizontal .bb-flip-prev {
+	-webkit-transform: rotateX(0deg);
+	-moz-transform: rotateX(0deg);
+	-o-transform: rotateX(0deg);
+	-ms-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+.bb-vertical .bb-flip-next-end {
+	-webkit-transform: rotateY(-15deg);
+	-moz-transform: rotateY(-15deg);
+	-o-transform: rotateY(-15deg);
+	-ms-transform: rotateY(-15deg);
+	transform: rotateY(-15deg);
+}
+.bb-vertical .bb-flip-prev-end {
+	-webkit-transform: rotateY(-165deg);
+	-moz-transform: rotateY(-165deg);
+	-o-transform: rotateY(-165deg);
+	-ms-transform: rotateY(-165deg);
+	transform: rotateY(-165deg);
+}
+.bb-horizontal .bb-flip-next-end {
+	-webkit-transform: rotateX(15deg);
+	-moz-transform: rotateX(15deg);
+	-o-transform: rotateX(15deg);
+	-ms-transform: rotateX(15deg);
+	transform: rotateX(15deg);
+}
+.bb-horizontal .bb-flip-prev-end {
+	-webkit-transform: rotateX(165deg);
+	-moz-transform: rotateX(165deg);
+	-o-transform: rotateX(165deg);
+	-ms-transform: rotateX(165deg);
+	transform: rotateX(165deg);
+}
+.bb-item {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	background: #fff;
+}
+.bb-item img,
+.bb-bookblock img{
+	width: 100%;
+	height: 100%;
+}
+/* No JS */
+.no-js .bb-bookblock, 
+.no-js ul.bb-custom-grid li {
+	width: auto;
+	height: auto;
+}
+.no-js .bb-item {
+	display: block;
+	position: relative;
+}
+/*顶部*/
+.menuTop{
+	height: 36px;
+	line-height: 36px;
+	border-bottom: 1px solid #e1e1e1;
+	background-color: #f4f4f4;
+	font-size: 12px;
+	color: #868686;
+}
+.menuTop.login{
+	background-color: #5a5a5a;
+	color: #fff;
+}
+.menuTop.login a:before{
+	background-color: #fff;
+}
+.menuTop a{
+	text-decoration: none;
+	color: inherit;
+	float: left;
+	display: block;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+}
+.menuTop a:hover{
+	color: #b08751;
+}
+.menuTop a:first-child{
+	padding-left: 0;
+}
+.menuTop a:first-child:before{
+	display: none;
+}
+.menuTop a:last-child{
+	padding-right: 0;
+}
+.menuTop a:before{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 1px;
+	height: 10px;
+	background-color: #bbb;
+	top: 50%;
+	margin-top: -5px;
+	left: 0px;
+}
+.menuTop a.active{
+	color: #b08751;
+}
+.menuTop a.active2{
+	color: #fe9927;
+}
+/*logo段*/
+.headBox{
+	margin-top: 40px;
+}
+.headBox .logo{
+	display: block;
+	width: 206px;
+	height: 59px;
+	margin-top: -6px;
+	background: url('http://img.kanshu.com/2013/ksnew2016/images/logo.png') no-repeat center;
+}
+.headBox .mybooks{
+	display: block;
+	width: 110px;
+	height: 40px;
+	border: 1px solid #b08751;
+	color: #b08751;
+	line-height: 38px;
+	font-size: 14px;
+	padding-left: 39px;
+	text-decoration: none;
+	position: relative;
+}
+.headBox .mybooks:hover{
+	color: #fff;
+	background-color: #b08751;
+}
+.headBox .mybooks:hover:before{
+	background: url('http://img.kanshu.com/2013/ksnew2016/images/myBooks_bg_hover.png') no-repeat center;
+}
+.headBox .mybooks:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 9px;
+	left: 11px;
+	width: 20px;
+	height: 21px;
+	background: url('http://img.kanshu.com/2013/ksnew2016/images/myBooks_bg.png') no-repeat center;
+	background-size: 100% 100%;
+}
+.headBox .searchBox{
+	width: 500px;
+	height: 40px;
+	margin-left: 350px;
+	position: relative;
+}
+.headBox .searchBox div{
+	position: absolute;
+	width: 500px;
+	height: 40px;
+	border: 1px solid #5a5a5a;
+	top: -1px;
+	left: -1px;
+	z-index: -1;
+}
+.headBox .searchBox.active{
+	border-color: #fe9927;
+}
+.headBox .searchBox .sub_btn:hover{
+	background-color: #fe9927;
+}
+.headBox .searchBox .sub_btn:hover+div{
+	border-color: #fe9927;
+}
+.headBox .searchBox .txt{
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	height: 38px;
+	line-height: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 80px;
+	vertical-align: middle;
+}
+.headBox .searchBox .sub_btn{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 76px;
+	height: 38px;
+	background: #5a5a5a url('http://img.kanshu.com/2013/ksnew2016/images/search_btn.png') no-repeat center;
+	background-size: 27px 27px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	overflow: hidden;
+}
+/*作品分类段*/
+.menuBox{
+	margin-top: 27px;
+	border-bottom: 2px solid #5a5a5a;
+}
+.menuBox .zuopintip{
+	display: block;
+	width: 230px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #5a5a5a;
+	font-weight: normal!important;
+}
+.menuBox .chongzhi{
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	color: #fff;
+	display: block;
+	background-color: #5a5a5a;
+	text-decoration: none;
+	margin-top: 10px;
+}
+.menuBox .chongzhi:hover{
+	background-color: #fe9927;
+}
+.menuBox .menu{
+	margin-top: 2px;
+	margin-left: 38px;
+}
+.menuBox .menu a{
+	font-size: 20px;
+	color: #5a5a5a;
+	text-decoration: none;
+	padding-left: 32px;
+	padding-right: 32px;
+	line-height: 45px;
+}
+.menuBox .menu a.active,
+.menuBox .menu a:hover{
+	color: #fe9927;
+}
+/*内容板块*/
+.contentBox .types{
+	width: 230px;
+	height: 596px;
+	margin-top: -20px;
+	overflow: hidden;
+}
+.contentBox .types ul.typelist{
+	border: 1px solid #c3c3c3;
+	border-top: none;
+}
+.contentBox .types ul.typelist li{
+	list-style: none;
+	height: 80px;
+	overflow: hidden;
+	border-top: 1px solid #e1e1e1;
+}
+.contentBox .types ul.typelist li a{
+	padding-top: 16px;
+	width: 33.333%;
+	float: left;
+	font-size: 14px;
+	color: #5a5a5a;
+	position: relative;
+	text-decoration: none;
+	line-height: 34px;
+}
+.contentBox .types ul.typelist li:nth-child(4) a,
+.contentBox .types ul.typelist li:nth-child(5) a{
+	color: #b08751;
+}
+.contentBox .types ul.typelist li a:hover{
+	background-color: #f9f9f9;
+	color: #fe9927;
+	height: 79px;
+}
+.contentBox .types ul.typelist li a:hover img{
+	-moz-transition: all 0.8s;
+	-webkit-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+.contentBox .types ul.typelist li a:hover img{
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+.contentBox .types ul.typelist li a.noBefor:before{
+	display: none;
+}
+.contentBox .types ul.typelist li a:hover+a:before{
+	display: none;
+}
+.contentBox .types ul.typelist li a:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 22px;
+	left: 0;
+	width: 1px;
+	height: 37px;
+	background-color: #e1e1e1;
+}
+.contentBox .types ul.typelist li a:first-child:before{
+	display: none;
+}
+.contentBox .types ul.typelist li a img{
+	width: 24px;
+	height: 24px;
+	margin: 0 auto;
+	display: block;
+}
+.contentBox .types ul.typelist li a span{
+	display: block;
+	text-align: center;
+}
+.contentBox .news{
+	margin-top: 17px;
+	border: 1px solid #e7e7e7;
+	padding: 13px;
+	padding-bottom: 8px;
+	padding-top: 0;
+}
+.contentBox .news .title:hover{
+	background-color: #f9f9f9;
+	border-bottom-color: transparent;
+}
+.contentBox .news .title{
+	font-size: 18px;
+	color: #3c3c3c;
+	height: 48px;
+	line-height: 48px;
+	border-bottom: 1px solid #efefef;
+	text-decoration: none;
+	display: block;
+	padding: 0 23px 0 39px;
+	position: relative;
+	margin-left: -13px;
+	margin-right: -13px;
+}
+.contentBox .news .title:before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background: url('http://img.kanshu.com/2013/ksnew2016/images/newtip.png') no-repeat center;
+	background-size: 100% 100%;
+	left: 13px;
+	top: 50%;
+	margin-top: -8px;
+}
+.contentBox .news .title:after{
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 14px;
+	background: url('http://img.kanshu.com/2013/ksnew2016/images/more.png') no-repeat center;
+	background-size: 100% 100%;
+	right: 13px;
+	top: 50%;
+	margin-top: -4px;
+}
+.contentBox .news ul li{
+	list-style: none;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	padding-left: 25px;
+	position: relative;
+	overflow: hidden;
+	color: #797979;
+}
+.contentBox .news ul li:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	margin-top: -2px;
+	left: 5px;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	background-color: #cfcfcf;
+}
+.contentBox .news ul li.active:before{
+	background-color: #ee4a4a;
+}
+.contentBox .news ul li a{
+	text-decoration: none;
+}
+
+.contentBox .news ul li.active{
+	color: #ee4a4a;
+}
+.contentBox .news ul li:hover{
+	color: #fe9927;
+}
+.contentBox .news ul li.active:hover:before,
+.contentBox .news ul li:hover:before{
+	background-color: #fe9927;
+}
+.contentBox .news ul li.active a{
+	/*color: #db3e3e;*/
+}
+.contentBox .books{
+	width: 700px;
+	height: 576px;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-left: 250px;
+	border: 1px solid #e7e7e7;
+}
+.contentBox .books .imgs{
+	margin-top: -1px;
+	margin-left: -1px;
+	margin-right: -1px;
+	height: 250px;
+	overflow: hidden;
+}
+.contentBox .books .imgs img{
+	width: 100%;
+}
+.contentBox .books .sexBox{
+	padding: 19px;
+	padding-left: 17px;
+	position: relative;
+}
+.contentBox .books .sexBox .sexL{
+	text-decoration: none;
+	width: 32px;
+	height: 60px;
+	padding-top: 11px;
+	line-height: 100%;
+	color: #fff;
+	display: block;
+	font-size: 18px;
+	text-align: center;
+	background-color: #5a5a5a;
+	position: absolute;
+	left: 0;
+	top: 20px;
+	font-weight: normal!important;
+}
+.contentBox .books .sexBox .sexL.woman{
+	top: 94px;
+}
+.contentBox .books .sexBox .sexL.active{
+	background-color: #fe9927;
+}
+.contentBox .books .sexBox .changeBox .bookInfo{
+	width: 304px;
+	height: 148px;
+	border: 1px solid #f3f3f3;
+	padding: 12px;
+	float: left;
+	margin-left: 27px;
+	width: 45.9%;
+	margin-left: 4.1%;
+}
+.contentBox .books .sexBox .changeBox .bookInfo:hover{
+	background-color: #fff;
+	border-color: transparent;
+	box-shadow: 0 0 10px rgba(0,0,0,0.16);
+	cursor: pointer;
+}
+.contentBox .books .sexBox .changeBox .bookInfo:hover img{
+	box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+.contentBox .books .sexBox .changeBox .bookInfo img{
+	width: 90px;
+	height: 122px;
+}
+.contentBox .books .sexBox .changeBox .bookInfo .infoDetail{
+	margin-left: 104px;
+}
+.contentBox .books .sexBox .changeBox .bookInfo .infoDetail .bookName{
+	font-size: 18px;
+	color: #3c3c3c;
+}
+.contentBox .books .sexBox .changeBox .bookInfo .infoDetail .bookName:hover{
+	color: #fe9927;
+}
+.contentBox .books .sexBox .changeBox .bookInfo .infoDetail .detail{
+	margin-top: 20px;
+	line-height: 18px;
+	height: 36px;
+	overflow: hidden;
+	font-size: 14px;
+	color: #acacac;
+}
+.contentBox .books .sexBox .changeBox .bookInfo .infoDetail .readNum{
+	margin-top: 17px;
+	font-size: 12px;
+	color: #acacac;
+	padding-right: 56px;
+	overflow: hidden;
+	position: relative;
+	height: 26px;
+}
+.contentBox .books .sexBox .changeBox .bookInfo .infoDetail .readNum .num{
+	margin-top: 8px;
+	float: none!important;
+	overflow: hidden;white-space: nowrap;text-overflow: ellipsis;-ms-text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url(ellipsis.xml#ellipsis)
+}
+.contentBox .books .sexBox .changeBox .bookInfo .infoDetail .readNum a{
+	width: 56px;
+	height: 22px;
+	line-height: 22px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 4px;
+}
+.contentBox .books .sexBox .changeBox .bookInfo .infoDetail .readNum a.brown,
+.contentBox .books .sexBox .changeBox .bookInfo .infoDetail .readNum a.orange{
+	background-color: #b08751;
+}
+.contentBox .books .sexBox .changeBox .bookInfo .infoDetail .readNum a.brown:hover,
+.contentBox .books .sexBox .changeBox .bookInfo .infoDetail .readNum a.orange:hover{
+	background-color: #fe9927;
+}
+.contentBox .books .sexBox .listBox{
+	width: 304px;
+	margin-left: 27px;
+	float: left;
+	margin-top: 5px;
+	width: 45.9%;
+	margin-left: 4.1%;
+}
+.contentBox .books .sexBox .listBox li{
+	list-style: none;
+	font-size: 16px;
+	line-height: 32px;
+	color: #868686;
+}
+.contentBox .books .sexBox .listBox li:first-child{
+	font-size: 18px;
+	line-height: 42px;
+}
+.contentBox .books .sexBox .listBox li:first-child a{
+	font-size: 18px;
+}
+.contentBox .books .sexBox .listBox li a{
+	text-decoration: none;
+}
+.contentBox .books .sexBox .listBox li:first-child{
+	color: #3c3c3c;
+}
+.contentBox .books .sexBox .listBox li:hover{
+	color: #fe9927;
+}
+/*广告*/
+.guanggao{
+	margin-top: 29px;
+	overflow: hidden;
+}
+.guanggao img{
+	width: 100%;
+}
+/*大神专区*/
+.dszq .books{
+	margin-right: 250px;
+	height: 576px;
+	width: 950px;
+	border: 1px solid #e7e7e7;
+	padding: 0;
+	/*overflow: hidden;*/
+}
+.dszq .books li{
+	float: left;
+	list-style: none;
+	width: 190px;
+	height: 287px;
+	padding-top: 30px;
+	padding-right: 30.5px;
+	padding-bottom: 18px;
+	padding-left: 36.5px;
+	position: relative;
+}
+.dszq .books li:hover{
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.16);
+	cursor: pointer;
+}
+.dszq .books li:hover img{
+	box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+.dszq .books li .bookAuthor{
+	position: absolute;
+	font-size: 14px;
+	color: #666;
+	width: 120px;
+	height: 30px;
+	padding-right: 10px;
+	text-align: right;
+	top: 162px;
+	background-color: rgba(234,234,234,0.85);
+}
+.dszq .books li:nth-child(5n+1){
+	/*padding-left: 24px;*/
+	width: 188px;
+}
+.dszq .books img{
+	width: 120px;
+	height: 162px;
+	display: block;
+	margin-bottom: 14px;
+}
+.dszq .books li a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #3c3c3c;
+	line-height: 30px;
+}
+.dszq .books li div{
+	width: 100%;
+}
+.dszq .books li div.bookName{
+	white-space: normal;
+	max-height: 60px;
+	margin-top: 12px;
+}
+.dszq .books li .labels{
+	height: 29px;
+	overflow: hidden;
+}
+.dszq .books li .labels span{
+	font-size: 12px;
+	color: #b9b9b9;
+	border: 1px solid #ddd;
+	display: inline-block;
+	float: left;
+	height: 21px;
+	margin-left: 8px;
+	line-height: 21px;
+	padding: 0 4px;
+	margin-top: 8px;
+}
+.dszq .books li .labels span:first-child{
+	margin-left: 0;
+}
+.dszq .books li div:not(.labels):not(.bookAuthor):hover{
+	color: #fe9927;
+}
+/*男生专区*/
+.nanshengzhuanqu .singleBook{
+	width: 230px;
+	height: 576px;
+	background-color: #eeeeee;
+	margin-right: 20px;
+	border: 1px solid #f5f5f5;
+	padding: 29px 25px 0;
+}
+.nanshengzhuanqu .singleBook:hover{
+	background-color: #fffaf4;
+	box-shadow: 0 0 10px rgba(103,34,0,0.16);
+	cursor: pointer;
+}
+.nanshengzhuanqu .singleBook .typeAuthor span:nth-child(1):hover{
+	color: #3c3c3c;
+}
+.nanshengzhuanqu .singleBook .readBegin:hover{
+	background-color: #fe9927;
+}
+.nanshengzhuanqu .singleBook .bookName:hover,
+.nanshengzhuanqu .singleBook .typeAuthor span:nth-child(2):hover{
+	color: #fe9927;
+}
+.nanshengzhuanqu .singleBook img{
+	width: 180px;
+	height: 240px;
+}
+.nanshengzhuanqu .singleBook .bookName{
+	line-height: 35px;
+	margin-top: 15px;
+	font-size: 22px;
+	color: #5a5a5a;
+	overflow: hidden;
+	max-height: 70px;
+}
+.nanshengzhuanqu .singleBook .typeAuthor{
+	font-size: 18px;
+	line-height: 26px;
+	margin-top: 8px;
+	color: #5a5a5a;
+}
+.nanshengzhuanqu .singleBook .typeAuthor span:nth-child(1){
+	color: #b08751;
+	margin-right: 15px;
+	display: inline-block;
+	position: relative;
+}
+.nanshengzhuanqu .singleBook .typeAuthor span:nth-child(1):before{
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 14px;
+	background-color: #d0d0d0;
+	margin-top: -7px;
+	right: -7px;
+	top: 50%;
+}
+.nanshengzhuanqu .singleBook .readNum{
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 10px;
+	color: #5a5a5a;
+}
+.nanshengzhuanqu .singleBook .detail{
+	line-height: 22px;
+	font-size: 14px;
+	color: #868686;
+	margin-top: 10px;
+	overflow: hidden;
+	max-height: 44px;
+}
+.nanshengzhuanqu .singleBook .newArticle{
+	margin-top: 13px;
+	font-size: 14px;
+	color: #868686;
+}
+.nanshengzhuanqu .singleBook .readBegin{
+	width: 132px;
+	height: 38px;
+	background-color: #5a5a5a;
+	display: block;
+	text-decoration: none;
+	margin-left: 24px;
+	margin-top: 32px;
+	font-size: 18px;
+	line-height: 38px;
+	text-align: center;
+	color: #ffffff;
+}
+.nanshengzhuanqu .books{
+	width: 701px;
+	height: 576px;
+	border: 1px solid #e7e7e7;
+	/*padding-left: 26px;*/
+	/*padding-right: 26px;*/
+	/*padding-top: 5px;*/
+}
+.nanshengzhuanqu .books li{
+	list-style: none;
+	/*border-top: 1px solid #efefef;*/
+	/*margin-top: 23px;*/
+	/*padding-top: 24px;*/
+}
+.nanshengzhuanqu .books li:first-child{
+	border-top: none;
+	padding-top: 0;
+}
+.nanshengzhuanqu .books li .book{
+	float: left;
+	width: 310px;
+	width: 50%;
+	height: 191px;
+	padding-left: 4%;
+	padding-top: 26.5px;
+	padding-bottom: 23px;
+	padding-right: 12px;
+}
+.nanshengzhuanqu .books li .book:hover{
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+.nanshengzhuanqu .books li .book:hover img{
+	box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+.nanshengzhuanqu .books li .book .bookDetail .bookName:hover,
+.nanshengzhuanqu .books li .book .bookDetail .typeAuthor span+a:hover{
+	color: #fe9927;
+}
+.nanshengzhuanqu .books li .book .bookDetail .typeAuthor span:hover{
+	color: #3c3c3c;
+}
+.nanshengzhuanqu .books li .book:first-child{
+	margin-left: 0;
+}
+.nanshengzhuanqu .books li .book img{
+	width: 100px;
+	height: 138px;
+	margin-right: 17px;
+}
+.nanshengzhuanqu .books li .book .bookDetail{
+	margin-left: 117px;
+}
+.nanshengzhuanqu .books li .book .bookDetail .bookName{
+	font-size: 18px;
+	color: #3c3c3c;
+	line-height: 46px;
+}
+.nanshengzhuanqu .books li .book .bookDetail .detail{
+	font-size: 14px;
+	line-height: 25px;
+	color: #868686;
+	max-height: 50px;
+	overflow: hidden;
+}
+.nanshengzhuanqu .books li .book .bookDetail .typeAuthor{
+	font-size: 14px;
+	line-height: 22px;
+	width: 100%;
+	margin-top: 12px;
+	color: #acacac;
+}
+.nanshengzhuanqu .books li .book .bookDetail .typeAuthor span{
+	color: #b08751;
+	margin-right: 15px;
+	display: inline-block;
+	position: relative;
+}
+.nanshengzhuanqu .books li .book .bookDetail .typeAuthor span:before{
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 14px;
+	background-color: #d0d0d0;
+	margin-top: -7px;
+	right: -7px;
+	top: 50%;
+}
+/*女生专区*/
+.nvshengzhuanqu .content{
+	width: 950px;
+	height: 576px;
+}
+.nvshengzhuanqu .books{
+	width: 100%;
+	height: 355px;
+	border: 1px solid #e7e7e7;
+	/*padding-left: 26px;*/
+}
+.nvshengzhuanqu .books li{
+	list-style: none;
+}
+.nvshengzhuanqu .books li .book{
+	float: left;
+	width: 435px;
+	width: 50%;
+	height: 176.6px;
+	padding-left: 25px;
+	padding-top: 19.295px;
+	padding-right: 15px;
+}
+.nvshengzhuanqu .books li:first-child .book{
+	/*padding-top: 24px;*/
+}
+.nvshengzhuanqu .books li .book:hover{
+	background-color: #fff;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	cursor: pointer;
+}
+.nvshengzhuanqu .books li .book:hover img{
+	box-shadow: 0 0 6px rgba(0,0,0,0.2);
+}
+.nvshengzhuanqu .books li .book .bookDetail .bookName:hover,
+.nvshengzhuanqu .books li .book .bookDetail .typeAuthor span+a:hover{
+	color: #fe9927;
+}
+.nvshengzhuanqu .books li .book .bookDetail .typeAuthor span:hover{
+	color: #3c3c3c;
+}
+.nvshengzhuanqu .books li .book img{
+	width: 100px;
+	height: 138px;
+	margin-right: 17px;
+}
+.nvshengzhuanqu .books li .book .bookDetail{
+	margin-left: 117px;
+}
+.nvshengzhuanqu .books li .book .bookDetail .bookName{
+	font-size: 18px;
+	color: #3c3c3c;
+	line-height: 46px;
+}
+.nvshengzhuanqu .books li .book .bookDetail .detail{
+	font-size: 14px;
+	line-height: 25px;
+	color: #868686;
+	max-height: 50px;
+	overflow: hidden;
+}
+.nvshengzhuanqu .books li .book .bookDetail .typeAuthor{
+	font-size: 14px;
+	line-height: 22px;
+	width: 100%;
+	margin-top: 12px;
+	color: #acacac;
+}
+.nvshengzhuanqu .books li .book .bookDetail .typeAuthor span{
+	color: #b08751;
+	margin-right: 15px;
+	display: inline-block;
+	position: relative;
+}
+.nvshengzhuanqu .books li .book .bookDetail .typeAuthor span:before{
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 14px;
+	background-color: #d0d0d0;
+	margin-top: -7px;
+	right: -7px;
+	top: 50%;
+}
+.nvshengzhuanqu .typeBooks{
+	border: 1px solid #e7e7e7;
+	height: 199px;
+	width: 100%;
+	margin-top: 22px;
+}
+.nvshengzhuanqu .typeBooks .tabTitle{
+	background-color: #f0f0f0;
+	height: 43px;
+}
+.nvshengzhuanqu .typeBooks .tabTitle span{
+	float: left;
+	width: 33.33%;
+	display: block;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	cursor: pointer;
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 20px;
+	color: #5a5a5a;
+}
+.nvshengzhuanqu .typeBooks .tabTitle span:nth-child(2){
+	width: 33.34%;
+}
+.nvshengzhuanqu .typeBooks .tabTitle span.active{
+	border-left: 1px solid #e7e7e7;
+	border-right: 1px solid #e7e7e7;
+	color: #b08751;
+	background-color: #fff;
+	border-bottom: none;
+}
+.nvshengzhuanqu .typeBooks .tabTitle span.active:first-child{
+	border-left: none;
+}
+.nvshengzhuanqu .typeBooks .tabTitle span.active:last-child{
+	border-right: none;
+}
+.nvshengzhuanqu .typeBooks .tabContent .list{
+	font-size: 16px;
+	width: 50%;
+	/*margin-top: 10px;*/
+	color: #5a5a5a;
+	position: relative;
+	float: left;
+}
+.nvshengzhuanqu .typeBooks .tabContent .list:first-child:before{
+	display: none;
+}
+.nvshengzhuanqu .typeBooks .tabContent .list li:hover{
+	background-color: #f9f9f9;
+}
+.nvshengzhuanqu .typeBooks .tabContent .list li{
+	list-style: none;
+	line-height: 38px;
+	position: relative;
+	padding: 0 23px;
+	padding-right: 130px;
+}
+.nvshengzhuanqu .typeBooks .tabContent .list li .type{
+	color: #b08751;
+	margin-right: 17px;
+}
+.nvshengzhuanqu .typeBooks .tabContent .list li>.fl{
+	width: 100%;
+	overflow: hidden;white-space: nowrap;text-overflow: ellipsis;-ms-text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url(ellipsis.xml#ellipsis)
+}
+.nvshengzhuanqu .typeBooks .tabContent .list li .fr{
+	position: absolute;
+	right: 23px;
+	width: 105px;
+	font-size: 12px;
+}
+.nvshengzhuanqu .typeBooks .tabContent .list li .date{
+	margin-right: 8px;
+	color: #acacac;
+}
+.nvshengzhuanqu .typeBooks .tabContent .list li .wj{
+	color: #fe9927;
+}
+.nvshengzhuanqu .typeBooks .tabContent .list li .gx{
+	color: #ee4848;
+}
+.nvshengzhuanqu .typeBooks .tabContent .list li .fl .type+a:hover{
+	color: #fe9927;
+}
+.nvshengzhuanqu .typeBooks .tabContent .list li .fl .type:hover{
+	color: #3c3c3c;
+}
+.typeMenu{
+	font-size: 24px;
+	color: #5a5a5a;
+	height: 80px;
+	line-height: 80px;
+	border-bottom: 2px solid #a5a5a5;
+}
+.typeMenu .menus span{
+	float: left;
+	margin-left: 32px;
+	position: relative;
+	cursor: pointer;
+}
+.typeMenu .menus span:first-child{
+	margin-left: 0;
+}
+.typeMenu .menus span.active{
+	color: #ee4848;
+}
+.typeMenu .menus span.active:before{
+	content: '';
+	position: absolute;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-bottom: 7px solid #b0b0b0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -7px;
+}
+.typeMenu .menus span.active:after{
+	content: '';
+	position: absolute;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #fff;
+	bottom: 0;
+	left: 50%;
+	margin-left: -5px;
+}
+.typeMenu a{
+	color: #acacac;
+	font-size: 16px;
+}
+.typeMenu a:hover{
+	color: #fe9927;
+}
+.typeMenuContent .typeMenuLeft{
+	width: 950px;
+}
+.typeMenuContent .typeMenuLeft .tableList{
+	width: 950px;
+	height: 816px;
+	border: 1px solid #e7e7e7;
+}
+.typeMenuContent .typeMenuLeft .tableList li{
+	list-style: none;
+}
+.typeMenuContent .typeMenuLeft .tableList li:hover{
+	background-color: #f9f9f9;
+}
+.typeMenuContent .typeMenuLeft .tableList li .vip{
+	position: relative;
+}
+.typeMenuContent .typeMenuLeft .tableList li .vip:before{
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 15px;
+	top: 50%;
+	margin-top: -7.5px;
+	right: -30px;
+	display: block;
+	background: url('http://img.kanshu.com/2013/ksnew2016/images/vip.png') no-repeat center;
+	background-size: 100% 100%;
+}
+.typeMenuContent .typeMenuLeft .tableList li:first-child{
+	background-color: #f0f0f0;
+	height: 54px;
+	line-height: 54px;
+	font-size: 18px;
+	color: #868686;
+}
+.typeMenuContent .typeMenuLeft .tableList li div{
+	float: left;
+	padding-left: 25px;
+	overflow: hidden;white-space: nowrap;text-overflow: ellipsis;-ms-text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url(ellipsis.xml#ellipsis)
+}
+.typeMenuContent .typeMenuLeft .tableList li div:nth-child(5n+1){
+	width: 119px;
+}
+.typeMenuContent .typeMenuLeft .tableList li:not(:first-child) div:nth-child(5n+1){
+	color: #b08751;
+	font-size: 14px;
+}
+.typeMenuContent .typeMenuLeft .tableList li:not(:first-child) div:nth-child(5n+1):hover{
+	color: #3c3c3c;
+}
+.typeMenuContent .typeMenuLeft .tableList li:not(:first-child) div:nth-child(5n+2):hover,
+.typeMenuContent .typeMenuLeft .tableList li:not(:first-child) div:nth-child(5n+3):hover{
+	color: #fe9927;
+}
+.typeMenuContent .typeMenuLeft .tableList li:not(:first-child) div:nth-child(5n+4):hover{
+	color: #b08751;
+}
+.typeMenuContent .typeMenuLeft .tableList li div:nth-child(5n+2){
+	width: 256px;
+}
+.typeMenuContent .typeMenuLeft .tableList li:not(:first-child) div:nth-child(5n+2){
+	font-size: 16px;
+	color: #5a5a5a;
+}
+.typeMenuContent .typeMenuLeft .tableList li div:nth-child(5n+3){
+	width: 338px;
+}
+.typeMenuContent .typeMenuLeft .tableList li:not(:first-child) div:nth-child(5n+3){
+	color: #868686;
+}
+.typeMenuContent .typeMenuLeft .tableList li div:nth-child(5n+4){
+	width: 106px;
+}
+.typeMenuContent .typeMenuLeft .tableList li div:nth-child(5n){
+	width: 128px;
+}
+.typeMenuContent .typeMenuLeft .tableList li:not(:first-child){
+	line-height: 38px;
+	font-size: 12px;
+	color: #acacac;
+}
+.typeMenuContent .typeMenuLeft .tableList li:not(:first-child) div:nth-child(5n){
+	padding-left: 17px;
+}
+.typeMenuContent .typeMenuLeft .link{
+	margin-top: 30px;
+	height: 185px;
+	border: 1px solid #e7e7e7;
+	overflow: hidden;
+}
+.typeMenuContent .typeMenuLeft .link .tab_menu{
+	height: 39px;
+	line-height: 39px;
+	font-size: 18px;
+	color: #606060;
+	background-color: #f0f0f0;
+	overflow: hidden;white-space: nowrap;text-overflow: ellipsis;-ms-text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url(ellipsis.xml#ellipsis)
+}
+.typeMenuContent .typeMenuLeft .link .tab_menu span{
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+	padding: 0 26px;
+}
+.typeMenuContent .typeMenuLeft .link .tab_menu span.hover{
+	background-color: #fff;
+	position: relative;
+}
+.typeMenuContent .typeMenuLeft .link .tab_menu span.hover:before{
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #c4c4c4;
+}
+.typeMenuContent .typeMenuLeft .link .link_cont{
+	padding-top: 12px;
+	padding-left: 24px;
+}
+.typeMenuContent .typeMenuLeft .link .link_cont ul{
+	max-height: 120px;
+	overflow: hidden;white-space: nowrap;text-overflow: ellipsis;-ms-text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url(ellipsis.xml#ellipsis)
+}
+.typeMenuContent .typeMenuLeft .link .link_cont a{
+	font-size: 14px;
+	color: #acacac;
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	width: 12.7%;
+	overflow: hidden;white-space: nowrap;text-overflow: ellipsis;-ms-text-overflow: ellipsis;-o-text-overflow: ellipsis;-moz-binding: url(ellipsis.xml#ellipsis)
+}
+.typeMenuContent .typeMenuLeft .link .link_cont a:hover{
+	color: #b08751;
+}
+.typeMenuContent .typeMenuLeft .link .link_cont a:nth-child(8n){
+	width: 80px;
+}
+.typeMenuContent .typeMenuRight{
+	width: 230px;
+}
+.typeMenuContent .typeMenuRight .gzewm{
+	border: 1px solid #e7e7e7;
+	border-bottom: none;
+}
+.typeMenuContent .typeMenuRight .gzewm:last-child{
+	border-bottom: 1px solid #e7e7e7;
+}
+.typeMenuContent .typeMenuRight .gzewm .title{
+	height: 40px;
+	line-height: 40px;
+	background-color: #999;
+	color: #fff;
+	font-size: 18px;
+	margin-left: -1px;
+	margin-right: -1px;
+}
+.typeMenuContent .typeMenuRight .gzewm .ewmcon{
+	padding: 16px 41.5px;
+	height: 176px;
+}
+.typeMenuContent .typeMenuRight .gzewm .ewmcon img{
+	width: 144px;
+	height: 144px;
+}
+
+/*底部*/
+footer{
+	background-color: #373737;
+	color: #cdcdcd;
+	margin-top: 29px;
+	font-size: 14px;
+	line-height: 30px;
+	height: 230px;
+	border-top: 1px solid #e7e7e7;
+	padding-top: 18px;
+	overflow: hidden;
+	text-align: center;
+}
+footer .info nav{
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer .info nav a{
+	text-decoration: none;
+	font-size: 16px;
+	color: inherit;
+	position: relative;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 12px;
+}
+footer .info nav a:hover{
+	color: #b08751;
+}
+footer .info nav a:first-child{
+	padding-left: 0;
+}
+footer .info nav a:before{
+	content: '';
+	width: 2px;
+	height: 17px;
+	background-color: #b6b6b6;
+	position: absolute;
+	top: 50%;
+	left: -1px;
+	margin-top: -8.5px;
+}
+footer .info nav a:first-child:before{
+	display: none;
+}
+footer .info{
+	width: 100%;
+}
+footer .ewm .tip{
+	font-size: 18px;
+	line-height: 40px;
+	color: #cdcdcd;
+	text-align: center;
+	font-weight: normal!important;
+}
+footer .ewm img{
+	width: 141px;
+	height: 141px;
+}
+
+
+@media screen and (max-width: 1200px) {
+	body {min-width: 1000px;}
+	.container{width: 1000px;}
+	.menuBox .menu a{padding-left: 26px;padding-right: 26px;}
+	.contentBox .books{width: 500px;}
+	.dszq .books{width: 750px;}
+	.dszq .books li{width: 150px;padding-left: 12.5px;padding-right: 12.5px;}
+	.dszq .books li:nth-child(5n+1){width: 148px;}
+	.nanshengzhuanqu .books{width: 501px;}
+	.nvshengzhuanqu .content{width: 750px;}
+	.typeMenuContent .typeMenuLeft .yqlj .content a{width: 12.64%;}
+	.typeMenuContent .typeMenuLeft{width: 750px;}
+	.typeMenuContent .typeMenuLeft .tableList{width: 750px;}
+	.typeMenuContent .typeMenuLeft .tableList li div:nth-child(5n+1){width: 89px;}
+	.typeMenuContent .typeMenuLeft .tableList li div:nth-child(5n+2){width: 174px;}
+	.typeMenuContent .typeMenuLeft .tableList li div:nth-child(5n+3){width: 270px;}
+	.typeMenuContent .typeMenuLeft .tableList li div:nth-child(5n+4){width: 86px;}
+	.typeMenuContent .typeMenuLeft .tableList li div:nth-child(5n){width: 128px;}
+}

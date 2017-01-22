@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>普通注册</title>
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="contain">
+    <div class="top">
+        <div class="logo"><a href="http://www.kanshu.com/"><img src="http://img.kanshu.com/new/user/images/logo_zc.png" border="0"  class="logo"/></a></div>
+        <div class="yd_nav"> <span><a target="_blank" href="/">首页</a></span><i>|</i> <span><a target="_blank" href="#">排行榜</a></span><i>|</i> <span><a target="_blank" href="#">全本</a></span><i>|</i> <span><a target="_blank" href="#">书库</a></span><i>|</i>
+            <div id="gengduo" class="sp_more" > <a class="n_a" href="#">更多</a>
+                <ul class="yd_snav2" id="nav_s1">
+                    <li><a target="_blank" href="http://xuanhuan.kanshu.com/">玄幻 · 奇幻</a></li>
+                    <li><a target="_blank" href="http://wuxia.kanshu.com">武侠 · 仙侠</a></li>
+                    <li><a target="_blank" href="http://dushi.kanshu.com">都市</a> · <a target="_blank" href="http://mm.kanshu.com">言情</a></li>
+                    <li><a target="_blank" href="http://lishi.kanshu.com">历史 · 军事</a></li>
+                    <li><a target="_blank" href="http://wangyou.kanshu.com">网游 · 竞技</a></li>
+                    <li><a target="_blank" href="http://kehuan.kanshu.com">科幻 · 灵异</a></li>
+                    <li><a target="_blank" href="http://mm.kanshu.com">女生言情小说</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="cont zhuce">
+        <div class="cont_left">
+            <h3 class="reg_tit"><span class="reg_tab r_u cur"><i class="icon tk_y"></i> <em>用户注册</em></span><span class="reg_tab r_s gy"><i class="icon tk_g"></i> <em>注册成功</em></span></h3>
+            <ul class="list">
+                <li><span class="r1">用户名：</span><span class="r2">
+          <input name="username" type="text" id="username" />
+          </span><span class="org">*</span><span class="r3" id="v_uname">字母、数字结合,不支持特殊字数，限2-14个字符</span>
+                    <b style="display:none;" id="hi_uname" data="0">请填写个人账号</b>
+                    <b id="hv_uname" style="display:none;" class="r3">字母、数字结合,不支持特殊字数，限2-14个字符</b>
+                </li>
+                <li><span class="r1">邮箱：</span><span class="r2">
+          <input name="email" type="text" id="email" value="请填写个人常用邮箱" style="color:#BBBBBB;"/>
+          </span><span class="org"> </span><span class="r3" id="v_email">方便您激活账号、找回密码。（推荐使用QQ邮箱）</span>
+                    <span style="display:none;" id="hi_email" data="0">请填写个人常用邮箱</span><span id="hv_email" class="r3" style="display:none;">方便您激活账号、找回密码。（推荐使用QQ邮箱） q</span></li>
+                <li><span class="r1">密码：</span><span class="r2">
+          <input name="pw1" id="pw1" type="password" >
+          </span><span class="org">*</span><span class="r4" id="v_pw1" >6-15个字符，英文区分大小写</span><span style="display:none;" id="hi_pw1" data="0">6-15个字符，英文区分大小写</span><span id="hv_pw1" class="r3" style="display:none;">6-15个字符，英文区分大小写</span></li>
+                <li><span class="r1">确认密码：</span><span class="r2">
+          <input name="pw2" type="password" id="pw2" />
+          </span><span class="org">*</span><span class="r4" id="v_pw">重复您输入的密码</span><span id="hv_pw" class="r4" style="display:none;">重复您输入的密码</span></li>
+
+                <!--<li id="reg_validCode"><span class="r1">验证码：</span><span class="r2b">-->
+                    <!--<input name="validCode" maxlength="4" type="text" id="validCode" class="txt2"/>-->
+                    <!--</span><a href="javascript:void(0);" onclick="document.getElementById('captchaImg').src='/new/login/vdimgck?rnd='+Math.random();" class="yzm" hidefocus=true><img id="captchaImg" src="/new/login/vdimgck" onclick="document.getElementById('captchaImg').src='/new/login/vdimgck?rnd='+Math.random();" width="48" height="25" />换一张</a><span class="org">*</span><span class="r4" id="v_vc">请输入验证码</span>-->
+                <!--</li>-->
+
+                <li class="reg_nm"><span class="r1"></span>
+                    <input type="checkbox" name="read" value="1" id="read" checked="checked" onclick="validRegister(5, this)">
+                    我已阅读并同意<a href="#" target="_blank" class="red">《看书网协议》</a></li>
+                <li><span class="r1"></span>
+                    <input type="hidden" name="reurl" id="reurl" value="" />
+                    <input type="button" id="doReg" class="button_regist" value="立即注册" />
+                </li>
+            </ul>
+        </div>
+        <div class="cont_right">
+            <h2>用户登录</h2>
+            <ul>
+                <li>已有看书网账号？ </li>
+                <li><a href="/new/login/showLogin#http://www.kanshu.com" title="立即登录" class="button_login" id="login_link">立即登录</a></li>
+                <li>你也可以用站外账号登录:</li>
+                <li><a href="javascript:void(0);" onclick="ortherLogin('qq');return false;" title="腾讯QQ账号登录" class="button_qq"></a></li>
+                <li><a href="javascript:void(0);" onclick="ortherLogin('sina');return false;" title="新浪微博账号登录" class="button_sina"></a></li>
+                <li><a href="javascript:void(0);" onclick="ortherLogin('renren');return false;" title="人人网账号登录" class="button_renren"></a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="footer">
+    gfbaiwff
+</div>
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="js/reg.js"></script>
+</body>
+</html>
