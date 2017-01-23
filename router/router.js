@@ -22,6 +22,14 @@ exports.showRegister = function(req,res,next){
     res.render('reg');
 };
 
+exports.showLogin = function(req,res,next){
+    res.render('login');
+};
+
+exports.showMybooks = function(req,res,next){
+    res.render('mybooks');
+};
+
 exports.doRegister = function(req,res,next){
         var username = req.body.username;
         var email = req.body.email;
@@ -53,10 +61,6 @@ exports.doRegister = function(req,res,next){
                });
            }
     });
-};
-
-exports.showLogin = function(req,res,next){
-    res.render('login');
 };
 
 exports.doLogin = function (req,res,next) {

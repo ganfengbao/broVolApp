@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>我的动态-我的书架</title>
+
+    <link href="http://img.kanshu.com/account/css/new_css/style_new.css" rel="stylesheet" type="text/css" />
+    <link href="http://img.kanshu.com/account/css/a0.css" rel="stylesheet" type="text/css" id="spacecss" u="110806902"/>
+
+    <script type="text/javascript" src="http://img.kanshu.com/account/js/new/js/jquery-1.64.min.js"></script>
+    <script type="text/javascript" src="http://img.kanshu.com/account/js/gobal.js"></script>
+    <script type="text/javascript" src="http://img.kanshu.com/articleInfo/js/script2.js"></script>
+    <script type="text/javascript" src="http://img.kanshu.com/user/js/home_login.js"></script>
+    <script type="text/javascript" src="http://img.kanshu.com/account/js/new/js/jquery.jNice.js"></script>
+    <script type="text/javascript" src="http://img.kanshu.com/2013/ksnew/js/script20141107gbk.js"></script>
+    <script defer="true" type="text/javascript"  src="http://img.kanshu.com/account/js/jquery.pagination.js"></script>
+    <link href="http://img.kanshu.com/account/css/pagination.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://img.kanshu.com/bookrack/js/script.js"></script>
+    <link href="http://img.kanshu.com/weibo/css/tanchuang.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://img.kanshu.com/occasionally/js/occ.js"></script>
+    <script type="text/javascript" src="http://img.kanshu.com/friend/js/public.js"></script>
+    <link href="http://img.kanshu.com/user/css/loginBox.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div class="header">
+    <div class="top">
+        <div class="yd_header">
+            <div class="warpper">
+                <div class="yd_logo"><a target="_blank" href="/"  rel="nofollow"><img border="0" title="看书网" src="http://img.kanshu.com/account/images/new_images/grzx_logo.png"></a><a target="_blank" href="http://www.kanshu.com/home/user"  ><img border="0" title="看书网" src="http://img.kanshu.com/account/images/new_images/grzx_logo2.png"></a>
+                </div>
+                <div class="yd_nav"> <span class="sp_n"><a href="/" target="_blank">首页</a></span><i>|</i> <span class="sp_n"><a href="http://top.kanshu.com/" target="_blank">排行榜</a></span><i>|</i> <span class="sp_n"><a href="http://quanben.kanshu.com/" target="_blank">全本</a></span><i>|</i> <span class="sp_n"><a href="http://all.kanshu.com/" target="_blank">书库</a></span><i>|</i> <span class="sp_more" id="gengduo"><a href="#" class="n_a">更多<img src="http://img.kanshu.com/articleInfo/images/yd_more.gif" align="absmiddle" title="选择更多" /></a>
+			  <ul id="nav_s1" class="yd_snav2">
+                  <li><a href="http://xuanhuan.kanshu.com/" target="_blank">玄幻 · 奇幻</a></li>
+                  <li><a href="http://wuxia.kanshu.com" target="_blank">武侠 · 仙侠</a></li>
+                  <li><a href="http://dushi.kanshu.com" target="_blank">都市</a> · <a href="http://mm.kanshu.com" target="_blank">言情</a></li>
+                  <li><a href="http://lishi.kanshu.com" target="_blank">历史 · 军事</a></li>
+                  <li><a href="http://wangyou.kanshu.com" target="_blank">网游 · 竞技</a></li>
+                  <li><a href="http://kehuan.kanshu.com" target="_blank">科幻 · 灵异</a></li>
+                  <li><a href="http://mm.kanshu.com" target="_blank">女生言情小说</a></li></ul>
+			  </span> </div>
+                <div class="yd_search">
+                    <form target="_blank" action="http://so.kanshu.com/searchList/searchListGO" method="get">
+                        <input type="text" id="searchText" name="keys" onclick="cls()" class="s1" value="输入书名/作者名" />
+                        <input name="sort" id="searchSort" name="sort" type="hidden" value="1" />
+                        <input type="submit" value="搜索" class="s2" onmousemove="this.className='s22'" onmouseout="this.className='s2'"/>
+                    </form>
+                </div>
+                <div class="yd_topright" id="headerLogin"> <span class="sp_more" id="jilu"> <a href="/bookrack/myBookrack" target="_blank">我的书架<img src="http://img.kanshu.com/articleInfo/images/yd_more.gif" align="absmiddle"/></a>
+			  <div id="nav_s4" class="sj_box">
+                  <div class="read_old">
+                      <h4>阅读记录</h4>
+                      <div class="jl_box">
+                          <p><span class="sp_01"><a href="http://www.kanshu.com/artinfo/31807.html">《无双武神》</a></span><span class="sp_02"><a href="http://www.kanshu.com/files/article/html/31807/1118900.html">继续阅读&gt;&gt;</a></span></p>
+                          <p class="p_02">上次您阅读到：<a href="http://www.kanshu.com/files/article/html/31807/1118900.html">第七十三章--第七十五章</a></p>
+                      </div>
+                      <div class="jl_box">
+                          <p><span class="sp_01"><a href="http://www.kanshu.com/artinfo/39334.html">《最强修者》</a></span><span class="sp_02"><a href="http://www.kanshu.com/files/article/html/39334/2060775.html">继续阅读&gt;&gt;</a></span></p>
+                          <p class="p_02">上次您阅读到：<a href="http://www.kanshu.com/files/article/html/39334/2060775.html">第六十七章  找回面子（三更）</a></p>
+                      </div>
+                  </div>
+                  <div class="shujia_old">
+                      <h4>书架记录</h4>
+                      <div class="jl_box">您还没有作品加入书架</div>
+                  </div>
+                  <span class="more"></span>
+                  <div class="clear"></div>
+              </div>
+			  </span><i>|</i> <span class="sp_n"><a href="#"><img src="http://img.kanshu.com/public/images/ydy_qq.gif" border="0" align="absmiddle" title="QQ登录"/></a></span> <span class="sp_n"><a href="#"><img src="http://img.kanshu.com/public/images/ydy_sina.gif" border="0" align="absmiddle" title="微博登录" /></a></span> <span class="sp_n">
+			  <input type="button" class="ud_but2" value="登录" />
+			  </span> <span class="sp_n">
+			  <input type="button" class="ud_but1" value="注册" />
+			  </span> </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="head">
+            <div class="head_xinxi" id="zhongxing">
+            </div>
+            <div class="head_nav">
+                <ul>
+                    <li><a target="_blank" href="/">网站首页</a></li>
+                    <li><a href="/home/user">我的首页</a></li>
+                    <li><a href="/bookrack/myBookrack">书架</a></li>
+                    <li><a href="/friendAttention?type=friend">好友</a></li>
+                    <li><a href="/searchFriend">找人</a></li>
+                    <li><a href="/home/dressup">装扮</a></li>
+                    <li><a target="_blank" href="/author/applyAuthors">申请作者</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <script type="text/javascript">
+        $('#headerLogin').load('/artinfo/headLogin') ;
+    </script>
+    <div class="content ct2">
+        <div class="left_cont">
+            <div class="menu_bar2">
+                <ul id="menu_ul">
+                    <li><a href="/home/user" >我的首页</a></li>
+                    <li><span onclick="showmenu1()" id="sp1" class="now">我的动态</span>
+                        <div class="li_menu m1" > <a href="/bookrack/myBookrack"class="hover">我的书架</a>  <a href="/occasionally/occasionallyXianshi">我的消息</a> <a href="/friendAttention" >我的关注</a> <a href="/fans" >我的粉丝</a> <a href="/weiboHome/shuoshuo" >我的说说</a> <a href="/bookreviews" >我的书评</a> </div>
+                    </li>
+                    <!--li><span onclick="showmenu2()" id="sp2" >积分特权</span>
+                      <div class="li_menu m2" style="display:none;"> a href="/score/myscore" >我的积分</a><a href="/score/score_exchange" >积分兑换</a></div>
+                    </li-->
+                    <li><span onclick="showmenu3()" id="sp3" >账务记录</span>
+                        <div class="li_menu m3" style="display:none;">
+                            <a href="/account/zhangwu"  >基本账务信息</a>
+                            <a href="/account/baoyue"  >我的包月记录</a> <a href="/account/consumerBath"  >我的充值记录</a> <a href="/account/consumerList"  >我的消费记录</a>
+                            <a href="/new/account/duihuanTicket"  >看书卷兑换</a>
+                            <a href="/account/duihuanList"  >我的兑换记录</a>
+
+                        </div>
+                    </li>
+                    <li><span onclick="showmenu4()" id="sp4" >账号管理</span>
+                        <div class="li_menu m4" style="display:none;"> <a href="/new/ks_account/user/info" >个人资料</a> <a href="/account/modifyImg" >修改头像</a> <a href="/home/dressup" >装扮个人首页</a> <a href="/account/modifyPw" >密码安全</a> <a href="/account/privacy" >隐私设置</a> <a href="/account/share1" >同步分享</a> <a href="/account/blacklist" >黑名单</a> </div>
+                    </li>
+                    <li><span onclick="showmenu5()" id="sp5" >客户服务</span>
+                        <div class="li_menu m5" style="display:none;"> <a href="http://www.kanshu.com/news/help">客服联系</a> <a href="http://www.kanshu.com/news/newsxszl?id=108">充值帮助</a>
+                            <a href="/customer/complaint">投诉举报</a> </div>
+                    </li>
+                    <li><a href="/author/applyAuthors" >申请作者</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="right_cont">
+            <div class="tit ti2">
+                <h3>我的书架</h3>
+                <p><a href="/bookrack/myBookrack" class="hover">全部作品</a><a href="/bookrack/myvipBookrack">订阅作品</a><a href="/bookrack/myBookrack_update">7天更新的作品</a><a href="/bookrack/activity">活动大礼包专区</a></p><div class="clear"></div></div>
+            <div id="list">
+            </div>
+            <div id="sum" style="display:none">0</div>
+            <div id="Pagination" class="pagination"><!-- 这里显示分页 --></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <script type="text/javascript">
+        //分页
+        $(function(){
+            var initPagination = function() {
+                var num=$("#sum").html()/10;
+                var num_entries = Math.ceil(num);
+                // 创建分页
+                $("#Pagination").pagination(num_entries, {
+                    num_edge_entries: 1, //边缘页数
+                    num_display_entries: 4, //主体页数
+                    callback: pageselectCallback,
+                    items_per_page:1,//每页显示1项
+                    prev_text: "前一页",
+                    next_text: "后一页"
+                });
+            }();
+
+            function pageselectCallback(page_index, jq){
+                $('#list').load('/bookrack/mybook_ajax', {pages:page_index}, function(data){});
+                document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+                //$.post('/bookrack/mybook_ajax', {pages:page_index},function(data){
+                //	$('#list').html(data);
+                //})
+                //return false;
+            }
+        });
+    </script>
+    <link href="http://img.kanshu.com//account/css/new_css/headerfooter.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" id='skin' type="text/css" href="http://img.kanshu.com/find/css/ymPrompt.css" />
+    <script type="text/javascript" src="http://img.kanshu.com/ext/js/ymPrompt/ymPrompt.js"></script>
+    <script type="text/javascript" src="http://img.kanshu.com/public/js/tongji.js"></script>
+    <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=0" ></script>
+    <script type="text/javascript" id="bdshell_js"></script>
+    <script type="text/javascript">
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+    </script>
+    <script type="text/javascript">
+        $(function(){
+            //头部更多显示
+            $('#gengduo').mouseover(function (){
+
+                $("#gengduo").attr('class', 'sp_more m2');
+                $("#nav_s1").show();
+            });
+            $('#gengduo').mouseout(function (){
+                $("#gengduo").attr('class', 'sp_more');
+                $("#nav_s1").hide();
+            });
+            //头部更多显示end
+
+            //头部我的书架
+            $('#jilu').mouseover(function (){
+                $("#jilu").attr('class', 'sp_more m2');
+                $("#nav_s4").show();
+            });
+            $('#jilu').mouseout(function (){
+                $("#jilu").attr('class', 'sp_more');
+                $("#nav_s4").hide();
+            });
+            //头部我的书架end
+
+            //头部用户名
+            $('#name').mouseover(function (){
+                $("#name").attr('class', 'sp_more m2');
+                $("#nav_s3").show();
+            });
+            $('#name').mouseout(function (){
+                $("#name").attr('class', 'sp_more');
+                $("#nav_s3").hide();
+            });
+            //头部用户名end
+
+            //头部消息
+            $('#xiaoxi').mouseover(function (){
+                $("#xiaoxi").attr('class', 'sp_more m2');
+                $("#nav_s2").show();
+            });
+            $('#xiaoxi').mouseout(function (){
+                $("#xiaoxi").attr('class', 'sp_more');
+                $("#nav_s2").hide();
+            });
+            //头部消息end
+        })
+    </script>
+
+
+    <div class="footer">
+        <p class="p_01"><a href="http://about.kanshu.com/" rel="nofollow">关于看书网</a>|<a href="http://about.kanshu.com/contactus.htm" rel="nofollow">联系我们</a>|<a href="http://about.kanshu.com/cpyc.htm" rel="nofollow">诚聘英才</a>|<a href="http://about.kanshu.com/swhz.htm" rel="nofollow">商务合作</a>|<a href="http://about.kanshu.com/friendlink.htm" rel="nofollow">友情链接</a></p>
+        <p>本站所收录所有<a href="http://xuanhuan.kanshu.com/">玄幻小说</a>、<a href="http://mm.kanshu.com/">言情小说</a>、<a href="http://dushi.kanshu.com/">都市小说</a>及其它各类<a href="http://www.kanshu.com/">小说</a>作品、小说评论均属其个人行为，不代表本站立场。</p>
+        <p>Copyright (C) 2004-2013 <a href="http://www.kanshu.com/">看书网</a> All Rights Reserved 成都古羌科技有限公司 版权所有</p>
+        <p>蜀ICP备05000570号 电信增值业务许可证：川B2-20100073</p>
+        <p>网络文化经营许可证：川网文[2011]0207-6号</p>
+    </div>
+
+</body>
+</html>

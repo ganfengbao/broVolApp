@@ -1,0 +1,20 @@
+<div class="menuTop">
+    <div class="clearfix container">
+        <div class="fl clearfix">
+            <a href="#" target="_blank">客户端下载</a>
+            <a href="#">免费小说</a>
+            <a href="#">包月作品</a>
+        </div>
+        <% if(!login) {%>
+        <div class="fr clearfix">
+            <a href="/login" class="active">登录</a>
+            <a href="/reg">注册</a>
+        </div>
+        <%}else{%>
+        <div class="fr clearfix">
+            <a href="/" class="active">欢迎<%=username%></a>
+            <a href="/reg">个人信息</a>
+        </div>
+        <%}%>
+    </div>
+</div>

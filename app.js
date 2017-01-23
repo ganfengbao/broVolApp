@@ -21,10 +21,10 @@ app.use(express.static('./public'));
 app.set('view engine','ejs');
 
 app.get('/',router.showIndex);
-
 app.get('/reg',router.showRegister);
 app.post("/doReg",router.doRegister);
 app.get('/login',router.showLogin);
 app.post('/doLogin',router.doLogin);
+app.get('/mybooks',router.showMybooks);
 
 app.listen(3000);

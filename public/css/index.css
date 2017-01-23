@@ -229,7 +229,7 @@ body{min-width: 1200px;}
 [data-slide] .bd li{ list-style: none;zoom:1; vertical-align:middle; }
 [data-slide] .bd img{ width:100%; height:100%; display:block;  }
 [data-slide] .prev,
-[data-slide] .next{z-index:110;overflow: hidden; position:absolute; left:0; top:50%; margin-top:-21px; display:block; width:20px; height:42px; background:rgba(0,0,0,0.25) url(http://img.kanshu.com/2013/ksnew2016/images/slider-arrow.png) 0px 13px no-repeat;}
+[data-slide] .next{z-index:110;overflow: hidden; position:absolute; left:0; top:50%; margin-top:-21px; display:block; width:20px; height:42px; background:rgba(0,0,0,0.25) url(../images/slider-arrow.png) 0px 13px no-repeat;}
 [data-slide] .next{ left:auto; right:0; background-position:-20px 13px; }
 [data-slide] .prev:hover,
 [data-slide] .next:hover{ background-color: rgba(0,0,0,0.35);  }
@@ -521,7 +521,7 @@ body{min-width: 1200px;}
 	width: 206px;
 	height: 59px;
 	margin-top: -6px;
-	background: url('http://img.kanshu.com/2013/ksnew2016/images/logo.png') no-repeat center;
+	background: url('../images/logo.png') no-repeat center;
 }
 .headBox .mybooks{
 	display: block;
@@ -540,7 +540,7 @@ body{min-width: 1200px;}
 	background-color: #b08751;
 }
 .headBox .mybooks:hover:before{
-	background: url('http://img.kanshu.com/2013/ksnew2016/images/myBooks_bg_hover.png') no-repeat center;
+	background: url('../images/myBooks_bg_hover.png') no-repeat center;
 }
 .headBox .mybooks:before{
 	content: '';
@@ -550,7 +550,7 @@ body{min-width: 1200px;}
 	left: 11px;
 	width: 20px;
 	height: 21px;
-	background: url('http://img.kanshu.com/2013/ksnew2016/images/myBooks_bg.png') no-repeat center;
+	background: url('../images/myBooks_bg.png') no-repeat center;
 	background-size: 100% 100%;
 }
 .headBox .searchBox{
@@ -596,7 +596,7 @@ body{min-width: 1200px;}
 	right: 0;
 	width: 76px;
 	height: 38px;
-	background: #5a5a5a url('http://img.kanshu.com/2013/ksnew2016/images/search_btn.png') no-repeat center;
+	background: #5a5a5a url('../images/search_btn.png') no-repeat center;
 	background-size: 27px 27px;
 	border: none;
 	outline: none;
@@ -755,7 +755,7 @@ body{min-width: 1200px;}
 	position: absolute;
 	width: 16px;
 	height: 16px;
-	background: url('http://img.kanshu.com/2013/ksnew2016/images/newtip.png') no-repeat center;
+	background: url('../images/newtip.png') no-repeat center;
 	background-size: 100% 100%;
 	left: 13px;
 	top: 50%;
@@ -766,7 +766,7 @@ body{min-width: 1200px;}
 	position: absolute;
 	width: 8px;
 	height: 14px;
-	background: url('http://img.kanshu.com/2013/ksnew2016/images/more.png') no-repeat center;
+	background: url('../images/more.png') no-repeat center;
 	background-size: 100% 100%;
 	right: 13px;
 	top: 50%;
@@ -1480,7 +1480,7 @@ body{min-width: 1200px;}
 	margin-top: -7.5px;
 	right: -30px;
 	display: block;
-	background: url('http://img.kanshu.com/2013/ksnew2016/images/vip.png') no-repeat center;
+	background: url('../images/vip.png') no-repeat center;
 	background-size: 100% 100%;
 }
 .typeMenuContent .typeMenuLeft .tableList li:first-child{

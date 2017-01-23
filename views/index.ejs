@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,31 +7,11 @@
 </head>
 <body>
 <!-- 未登录 -->
-<div class="menuTop">
-    <div class="clearfix container">
-        <div class="fl clearfix">
-            <a href="#" target="_blank">客户端下载</a>
-            <a href="#">免费小说</a>
-            <a href="#">包月作品</a>
-        </div>
-        <% if(!login) {%>
-        <div class="fr clearfix">
-            <a href="/login" class="active">登录</a>
-            <a href="/reg">注册</a>
-        </div>
-        <%}else{%>
-            <div class="fr clearfix">
-                <a href="/" class="active">欢迎<%=username%></a>
-                <a href="/reg">个人信息</a>
-            </div>
-        <%}%>
-    </div>
-</div>
-
+<%- include('header') %>
 <div class="container">
     <div class="headBox clearfix">
         <a href="/" class="logo fl"></a>
-        <a href="http://www.kanshu.com/bookrack/myBookrack" class="fr mybooks">我的书架</a>
+        <a href="/mybooks" class="fr mybooks">我的书架</a>
         <div class="searchBox clearfix">
 
             <input type="text" class="fl txt" name="" id="search_txt" placeholder="青春无悔">
@@ -43,48 +22,53 @@
     <div class="menuBox clearfix">
         <span class="zuopintip fl tc fw">作品分类</span>
         <nav class="menu fl clearfix">
-            <a href="http://mm.kanshu.com" title="女生言情网">女生</a>
-            <a href="http://all.kanshu.com/" title="小说书库">书库</a>
-            <a href="http://top.kanshu.com/" title="小说排行榜">排行</a>
-            <a href="http://quanben.kanshu.com/" title="全本小说">完本</a>
-            <a href="http://news.kanshu.com/zt/2011/fuli/">福利</a>
-            <a href="http://www.kanshu.com/author/applyAuthors">成为作者</a>
+            <a href="/" title="女生言情网">女生</a>
+            <a href="/" title="小说书库">书库</a>
+            <a href="/" title="小说排行榜">排行</a>
+            <a href="/" title="全本小说">完本</a>
+            <a href="/">福利</a>
+            <a href="/">成为作者</a>
         </nav>
-        <a href="http://pay.kanshu.com" class="fr chongzhi tc">充值</a>
+        <a href="/" class="fr chongzhi tc">充值</a>
     </div>
     <div class="contentBox clearfix">
         <div class="types fl">
             <ul class="typelist clearfix">
                 <li class="clearfix">
-                    <a href="http://dushi.kanshu.com/"  target="_blank" title="都市小说"><img src="http://img.kanshu.com/2013/ksnew2016/images/dushi.png?r=1.0.0.1"><span>都市</span></a>
-                    <a href="http://mm.kanshu.com/"  target="_blank" title="言情小说"><img src="http://img.kanshu.com/2013/ksnew2016/images/yanqing.png?r=1.0.0.1"><span>言情</span></a>
-                    <a href="http://xuanhuan.kanshu.com/"  target="_blank" title="玄幻小说"><img src="http://img.kanshu.com/2013/ksnew2016/images/xuanhuan.png?r=1.0.0.1"><span>玄幻</span></a>
+                    <a href="/"  target="_blank" title="都市小说"><img src="../images/dushi.png"><span>都市</span></a>
+                    <a href="/"  target="_blank" title="言情小说"><img src="../images/yanqing.png"><span>言情</span></a>
+                    <a href="/"  target="_blank" title="玄幻小说"><img src="../images/xuanhuan.png"><span>玄幻</span></a>
                 </li>
                 <li class="clearfix">
-                    <a href="http://wuxia.kanshu.com/"  target="_blank" title="仙侠小说"><img src="http://img.kanshu.com/2013/ksnew2016/images/xianxia.png?r=1.0.0.1"><span>仙侠</span></a>
-                    <a href="http://lishi.kanshu.com/"  target="_blank" title="历史小说"><img src="http://img.kanshu.com/2013/ksnew2016/images/lishi.png?r=1.0.0.1"><span>历史</span></a>
-                    <a href="http://lishi.kanshu.com/"  target="_blank" title="军事小说"><img src="http://img.kanshu.com/2013/ksnew2016/images/junshi.png?r=1.0.0.1"><span>军事</span></a>
+                    <a href="/"  target="_blank" title="仙侠小说"><img src="../images/xianxia.png"><span>仙侠</span></a>
+                    <a href="/"  target="_blank" title="历史小说"><img src="../images/lishi.png"><span>历史</span></a>
+                    <a href="/"  target="_blank" title="军事小说"><img src="../images/junshi.png"><span>军事</span></a>
                 </li>
                 <li class="clearfix">
-                    <a href="http://wangyou.kanshu.com/" target="_blank" title="网游小说"><img src="http://img.kanshu.com/2013/ksnew2016/images/wangyou.png?r=1.0.0.1"><span>网游</span></a>
-                    <a href="http://wuxia.kanshu.com/" target="_blank" title="武侠小说"><img src="http://img.kanshu.com/2013/ksnew2016/images/wuxia.png?r=1.0.0.1"><span>武侠</span></a>
-                    <a href="http://kehuan.kanshu.com/" target="_blank" title="灵异小说"><img src="http://img.kanshu.com/2013/ksnew2016/images/lingyi.png?r=1.0.0.1"><span>灵异</span></a>
+                    <a href="/" target="_blank" title="网游小说"><img src="../images/wangyou.png"><span>网游</span></a>
+                    <a href="/" target="_blank" title="武侠小说"><img src="../images/wuxia.png"><span>武侠</span></a>
+                    <a href="/" target="_blank" title="灵异小说"><img src="../images/lingyi.png"><span>灵异</span></a>
                 </li>
                 <li class="clearfix">
-                    <a href="http://all.kanshu.com/s_41_all_plo_0_f_0_sc_0_p_1_0_0_sh_0_o_0_pg_1_1.html?t=0" target="_blank" title="现代言情小说"><img src="http://img.kanshu.com/2013/ksnew2016/images/xianyan.png?r=1.0.0.1"><span>现言</span></a>
-                    <a href="http://all.kanshu.com/s_43_all_plo_0_f_0_sc_0_p_1_0_0_sh_0_o_0_pg_1_1.html?t=0" target="_blank" title="古代言情小说"><img src="http://img.kanshu.com/2013/ksnew2016/images/guyan.png?r=1.0.0.1"><span>古言</span></a>
-                    <a href="http://all.kanshu.com/s_42_all_plo_0_f_0_sc_0_p_1_0_0_sh_0_o_0_pg_1_1.html?t=0" target="_blank" title="校园小说"><img src="http://img.kanshu.com/2013/ksnew2016/images/xiaoyuan.png?r=1.0.0.1"><span>校园</span></a>
+                    <a href="/" target="_blank" title="现代言情小说"><img src="../images/xianyan.png"><span>现言</span></a>
+                    <a href="/" target="_blank" title="古代言情小说"><img src="../images/guyan.png"><span>古言</span></a>
+                    <a href="/" target="_blank" title="校园小说"><img src="../images/xiaoyuan.png"><span>校园</span></a>
                 </li>
                 <li class="clearfix">
-                    <a href="http://all.kanshu.com/s_47_77_plo_0_f_0_sc_0_p_1_0_0_sh_0_o_0_pg_1_1.html?t=0" target="_blank" title="耽美小说"><img src="http://img.kanshu.com/2013/ksnew2016/images/danmei.png?r=1.0.0.1"><span>耽美</span></a>
-                    <a href="http://all.kanshu.com/s_47_78_plo_0_f_0_sc_0_p_1_0_0_sh_0_o_0_pg_1_1.html?t=0" target="_blank" title="同人小说"><img src="http://img.kanshu.com/2013/ksnew2016/images/tongren.png?r=1.0.0.1"><span>同人</span></a>
-                    <a href="http://all.kanshu.com/" target="_blank" title="全部小说书库"><img src="http://img.kanshu.com/2013/ksnew2016/images/quanbu.png?r=1.0.0.1"><span>全部</span></a>
+                    <a href="/" target="_blank" title="耽美小说"><img src="../images/danmei.png"><span>耽美</span></a>
+                    <a href="/" target="_blank" title="同人小说"><img src="../images/tongren.png"><span>同人</span></a>
+                    <a href="/" target="_blank" title="全部小说书库"><img src="../images/quanbu.png"><span>全部</span></a>
                 </li>
             </ul>
             <div class="news">
-                <a href="http://www.kanshu.com/new_test/newlist/index.shtml" class="title" target="_blank">新闻公告</a>
+                <a href="/" class="title" target="_blank">新闻公告</a>
                 <ul>
-                    <li class="active"><a href="http://www.kanshu.com/newstest/422"  target="_blank" title="“第十五届中国微型小说年度奖（2016）”评选征集参评作品公告">“第十五届中国微型小说年度奖（2016）”评选征集参评作品公告</a></li><li><a href="http://www.kanshu.com/newstest/421"  target="_blank" title="“金熊猫”网络文学奖参评作品征集公告">“金熊猫”网络文学奖参评作品征集公告</a></li><li><a href="http://www.kanshu.com/newstest/420"  target="_blank" title="全网顶级大神，让你对书荒说NO!（玄幻篇）">全网顶级大神，让你对书荒说NO!（玄幻篇）</a></li>
+                    <li class="active">
+                        <a href="/"  target="_blank" title="“第十五届中国微型小说年度奖（2016）”评选征集参评作品公告">“第十五届中国微型小说年度奖（2016）”评选征集参评作品公告</a>
+                    </li>
+                    <li>
+                        <a href="/"  target="_blank" title="“金熊猫”网络文学奖参评作品征集公告">“金熊猫”网络文学奖参评作品征集公告</a></li><li><a href="http://www.kanshu.com/newstest/420"  target="_blank" title="全网顶级大神，让你对书荒说NO!（玄幻篇）">全网顶级大神，让你对书荒说NO!（玄幻篇）</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -92,24 +76,39 @@
             <div class="title">本站强推</div>
             <ul>
                 <li class="text-overflow clearfix">
-                    <a href="http://www.kanshu.com/artinfo/2014400.html" target="_blank">
+                    <a href="/" target="_blank">
                         <span class="fl">1</span>
-                        <div class="scal"><img class="fl" src="http://www.shuhai.com/files/article/image/32/32526/32526l.jpg" class="bookShadow"/></div>
+                        <div class="scal"><img class="fl" src="../images/32526l.jpg" class="bookShadow"/></div>
                         <div class="fl bookContent">
                             <div class="bookName text-overflow">行尸走肉</div>
                             <div class="bookType text-overflow">科幻灵异</div>
                             <div class="bookAuthor text-overflow">云川</div>
                         </div>
                     </a>
-                </li><li class="text-overflow"><a href="http://www.kanshu.com/artinfo/2019660.html"  target="_blank"><span>2</span>超级俗人</a></li><li class="text-overflow"><a href="http://www.kanshu.com/artinfo/2019693.html"  target="_blank"><span>3</span>艺校有鬼</a></li><li class="text-overflow"><a href="http://www.kanshu.com/artinfo/2019654.html"  target="_blank"><span>4</span>最强小厨师</a></li><li class="text-overflow"><a href="http://www.kanshu.com/artinfo/2011865.html"  target="_blank"><span>5</span>网游之冒牌NPC</a></li><li class="text-overflow"><a href="http://www.kanshu.com/artinfo/2014413.html"  target="_blank"><span>6</span>我的眼睛能透视</a></li><li class="text-overflow"><a href="http://www.kanshu.com/artinfo/2019679.html"  target="_blank"><span>7</span>技校精英混社会</a></li><li class="text-overflow"><a href="http://www.kanshu.com/artinfo/2019685.html"  target="_blank"><span>8</span>我住隔壁我姓王</a></li><li class="text-overflow"><a href="http://www.kanshu.com/artinfo/2019686.html"  target="_blank"><span>9</span>我的三国有点猛</a></li><li class="text-overflow"><a href="http://www.kanshu.com/artinfo/2019714.html"  target="_blank"><span>10</span>我当妇女主任那些年</a></li><li class="text-overflow more"><a href="http://all.kanshu.com/s_all_all_plo_0_f_0_sc_0_p_1_0_0_sh_0_o_0_pg_1_0.html?t=1" class="colorb0" target="_blank">>>查看更多</a></li>
+                </li><li class="text-overflow"><a href="/"  target="_blank"><span>2</span>超级俗人</a></li>
+                <li class="text-overflow"><a href="/"  target="_blank"><span>3</span>艺校有鬼</a></li>
+                <li class="text-overflow"><a href="/"  target="_blank"><span>4</span>最强小厨师</a></li>
+                <li class="text-overflow"><a href="/"  target="_blank"><span>5</span>网游之冒牌NPC</a></li>
+                <li class="text-overflow"><a href="/"  target="_blank"><span>6</span>我的眼睛能透视</a></li>
+                <li class="text-overflow"><a href="/"  target="_blank"><span>7</span>技校精英混社会</a></li>
+                <li class="text-overflow"><a href="/"  target="_blank"><span>8</span>我住隔壁我姓王</a></li>
+                <li class="text-overflow"><a href="/"  target="_blank"><span>9</span>我的三国有点猛</a></li>
+                <li class="text-overflow"><a href="/"  target="_blank"><span>10</span>我当妇女主任那些年</a></li>
+                <li class="text-overflow more"><a href="/" class="colorb0" target="_blank">>>查看更多</a></li>
             </ul>
         </div>
         <div class="books">
 
             <div id="bb-bookblock" class="bb-bookblock" data-slide>
-                <div class="bb-item"><a href="http://www.kanshu.com/artinfo/2018108.html" target="_blank"><img src="http://img.kanshu.com/2013/upload/0118/14847074999719.jpg"/></a></div>
-                <div class="bb-item"><a href="http://www.kanshu.com/artinfo/2003977.html" target="_blank"><img src="http://img.kanshu.com/2013/upload/0118/14847074999638.jpg"/></a></div>
-                <div class="bb-item"><a href="http://www.kanshu.com/artinfo/2018922.html" target="_blank"><img src="http://img.kanshu.com/2013/upload/0118/14847075001862.jpg"/></a></div>
+                <div class="bb-item"><a href="/" target="_blank">
+                    <img src="../images/14847074999719.jpg"/></a>
+                </div>
+                <div class="bb-item"><a href="/" target="_blank">
+                    <img src="../images/14847074999638.jpg"/></a>
+                </div>
+                <div class="bb-item"><a href="/" target="_blank">
+                    <img src="../images/14847075001862.jpg"/></a>
+                </div>
             </div>
 
             <div class="sexBox">
@@ -117,12 +116,16 @@
                 <a href="javascript:void(0);" data-click data-par="sexBox" data-com="nannv" data-class="nvsheng" class="sexL woman fw">女生</a>
                 <div class="changeBox">
                     <div class="nannv nansheng clearfix"><div class="bookInfo clearfix">
-                        <a href="http://www.kanshu.com/artinfo/2002169.html" target="_blank"><div class="scal"><img src="http://file5.kanshu.com/upload/article/2002169/2002169_m.jpg" class="fl bookShadow"/></div></a>
+                        <a href="/" target="_blank"><div class="scal">
+                            <img src="../images/2002169_m.jpg" class="fl bookShadow"/></div>
+                        </a>
                         <div class="infoDetail">
-                            <div class="bookName text-overflow"><a href="http://www.kanshu.com/artinfo/2002169.html" target="_blank">回到大祁打江山</a></div>
-                            <div class="detail">前世催眠失误的心理医生穿越大祁第一奸臣之家，附身在聋哑十六年的白痴少年身上，究竟是他的幸运还是不幸，上辈子太累，这辈子只想娇妻美眷，儿孙绕膝，舒舒服服地做一个蒙混度日的富二代，却不曾想家道中落，稀里糊涂的做上了钦差大人，且看张无伤如何玩弄江湖庙堂，凭借智慧与魅力，一统山河！（欢迎加入书友群： 560966175）</div><div class="readNum clearfix"><div class="fl num">8762人追读</div>
-                            <a href="http://www.kanshu.com/artinfo/2002169.html" class="fr brown" target="_blank">免费试读</a>
-                        </div>
+                            <div class="bookName text-overflow"><a href="/" target="_blank">回到大祁打江山</a></div>
+                            <div class="detail">前世催眠失误的心理医生穿越大祁第一奸臣之家，附身在</div>
+                            <div class="readNum clearfix">
+                                <div class="fl num">8762人追读</div>
+                                <a href="/" class="fr brown" target="_blank">免费试读</a>
+                            </div>
                         </div>
                     </div><div class="bookInfo clearfix">
                         <a href="http://www.kanshu.com/artinfo/2016371.html" target="_blank"><div class="scal"><img src="http://media.tadu.com/2015/06/04/4/e/0/f/4e0f504e188b4b5d9fc38313dbbc44d7.jpg" class="fl bookShadow"/></div></a>
@@ -136,19 +139,11 @@
                     <a href="http://www.kanshu.com/artinfo/2016042.html" target="_blank"><div class="scal"><img src="http://file.kanshu.com/upload/article/2016042/2016042_m.jpg" class="fl bookShadow"/></div></a>
                     <div class="infoDetail">
                         <div class="bookName text-overflow"><a href="http://www.kanshu.com/artinfo/2016042.html" target="_blank">阴间代理侦探</a></div>
-                        <div class="detail">如何帮助一个杀人犯变成无罪？
-                            如何找出一个双性恋解剖案的杀人证据？
-                            如何让梅妃挤掉杨玉环，变成李隆基的宠妃？
-                            如何让赵高变成一个好人？
-                            如何让潘金莲变成一个专情的妻子？
-                            王大可，一个唯利是图、不择手段、三本大学二流专业毕业的不入流律师。
-                            由于一次特别的经历，被指定为人间唯一一名阴间代理侦探。
-                            作为阴阳神探，她接下了一件件诡异离奇的案件，人生从此发生巨大转变......
-                            （本文纯属虚构，如有雷同，多多包涵）
-
-                            阴间代理侦探读者群：343398712，有意者加，还可以和作者一起参与剧情的讨论哦。或许你的观点会是下一章情节～～～</div><div class="readNum clearfix"><div class="fl num">3384人追读</div>
-                        <a href="http://www.kanshu.com/artinfo/2016042.html" class="fr brown" target="_blank">免费试读</a>
-                    </div>
+                        <div class="detail">如何帮助一个杀人犯变成无罪如何找出一个双性恋解剖案的杀人证据？</div>
+                        <div class="readNum clearfix">
+                            <div class="fl num">3384人追读</div>
+                            <a href="/" class="fr brown" target="_blank">免费试读</a>
+                        </div>
                     </div>
                 </div><div class="bookInfo clearfix">
                     <a href="http://www.kanshu.com/artinfo/2017715.html" target="_blank"><div class="scal"><img src="http://file5.kanshu.com/upload/article/2017715/2017715_m.jpg" class="fl bookShadow"/></div></a>
@@ -175,24 +170,9 @@
             </div>
         </div>
     </div>
-    <div class="guanggao clearfix">
-        <script>
-            (function() {
-                var s = "_" + Math.random().toString(36).slice(2);
-                document.write('<div id="' + s + '"></div>');
-                (window.slotbydup=window.slotbydup || []).push({
-                    id: '3278955',
-                    container: s,
-                    size: '1200,90',
-                    display: 'inlay-fix'
-                });
-            })();
-        </script>
-        <script src="http://dup.baidustatic.com/js/os.js"></script>
-    </div>
     <div class="commonTitle mt20 clearfix">
         <span class="fl fw">大神专区</span>
-        <a href="http://top.kanshu.com/more/editorbook.html" class="fr" target="_blank">查看更多 >></a>
+        <a href="/" class="fr" target="_blank">查看更多 >></a>
     </div>
     <div class="dszq clearfix mt20">
         <div class="recommend fr">
@@ -960,24 +940,7 @@
         </div>
     </div>
 </div>
-<footer>
-    <div class="container clearfix">
-        <div class="fl info">
-            <nav class="clearfix">
-                <a href="http://about.kanshu.com/" target="_blank">关于看书网</a>
-                <a href="http://about.kanshu.com/contactus.htm" target="_blank">联系我们</a>
-                <a href="http://about.kanshu.com/cpyc.htm" target="_blank">诚聘英才</a>
-                <a href="http://about.kanshu.com/swhz.htm" target="_blank">商务合作</a>
-                <a href="http://about.kanshu.com/friendlink.htm" target="_blank">友情链接</a>
-            </nav>
-            <div>本站所收录所有玄幻小说、言情小说、都市小说级其他各类小说作品、小说阅读网、免费小说阅读网、小说评论均属其个人行为，不代表本站立场。</div>
-            <div>Copyright(C)2004-2025看书网 ALLRights Reserved 成都古羌科技有限公司 版权所有</div>
-            <div>蜀ICP备14011046号 电信增值业务许可证：川B2-20100073</div>
-            <div>网络文化经营许可证：川网文[2011]0207-6号</div>
-        </div>
-
-    </div>
-</footer>
+<%- include('footer') %>
 
 
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
