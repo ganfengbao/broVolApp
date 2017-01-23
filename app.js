@@ -26,5 +26,8 @@ app.post("/doReg",router.doRegister);
 app.get('/login',router.showLogin);
 app.post('/doLogin',router.doLogin);
 app.get('/mybooks',router.showMybooks);
+app.get('/inputNew',router.inputNew);
+app.post('/doNew',router.doNew);
+app.get('/getNew',router.getNew);
 
 app.listen(3000);

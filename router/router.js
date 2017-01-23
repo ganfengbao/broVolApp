@@ -30,6 +30,10 @@ exports.showMybooks = function(req,res,next){
     res.render('mybooks');
 };
 
+exports.inputNew = function(req,res,next){
+    res.render('content/new_input');
+};
+
 exports.doRegister = function(req,res,next){
         var username = req.body.username;
         var email = req.body.email;
@@ -65,10 +69,8 @@ exports.doRegister = function(req,res,next){
 
 exports.doLogin = function (req,res,next) {
         var username = req.body.username;
-        console.log(username);
         var pw = Number(req.body.pw).toString();
         password = md5(pw);
-    console.log(password);
         db.find("users",{"username":username,"userpass":password},function(err,result){
             if(err){
                 res.json("-5");
@@ -88,4 +90,44 @@ exports.doLogin = function (req,res,next) {
                 }
             }
         });
+};
+
+exports.doNew = function (req,res,next) {
+        var title = req.body.title;
+        var content = req.body.content;
+        db.find("news",{"title":title},function(err,result){
+        if(err){
+            res.json("-3");
+            return;
+        }else{
+            if(result.length != 0){
+                res.json("-1");
+                return;
+            }
+            db.insertOne("news",{
+                "title":title,
+                "content":content,
+                "date":new Date()
+            },function(err,result){
+                if(err){
+                    res.json("-3");
+                    return;
+                }else{
+                    res.json("1");
+                }
+            });
+        }
+    });
+};
+
+exports.getNew = function (req,res,next) {
+        db.find("news",{},{"sort":{"date":-1},"pagemount":3},function(err,result){
+        if(err){
+            res.json("-3");
+            return;
+        }else{
+            res.json(result);
+            return;
+        }
+    });
 };

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/jumbotron.css" rel="stylesheet">
+</head>
+<body>
+<h1>信息发布</h1>
+<form class="col-lg-6">
+    <div class="form-group">
+        <label for="title">标题</label>
+        <input type="text" class="form-control" id="title">
+    </div>
+    <div class="form-group">
+        <label>内容</label>
+        <textarea class="form-control" rows="3" id="content1"></textarea>
+    </div>
+    <button type="button" class="btn btn-success" id="content">发布</button>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script>
+        $("#content").click(function(){
+            var title = $("#title").val();
+            var content = $("#content1").val();
+            $.post("/doNew",{"title":title,"content":content},function(data){
+            })
+        });
+    </script>
+</form>
+</body>
+</html>

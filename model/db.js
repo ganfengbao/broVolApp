@@ -1,5 +1,5 @@
 /**
- * Created by gfbaiwff on 2017/1/15.
+ * Created by gfbaiwff on 2017/1/12.
  */
 var MongoClient = require("mongodb").MongoClient;
 var settings = require("../setting.js");
@@ -37,7 +37,7 @@ exports.find = function (collectionName,json,C,D) {
         var limit = args.pagemount || 0;
         var sort = args.sort || {};
     }else{
-        throw new Error("find �����������봫���������ĸ�");
+        throw new Error("find 函数参数必须传三个或者四个");
         return;
     }
     _connectDB(function(err,db){
@@ -79,5 +79,14 @@ exports.updateMany = function(collectionName,json1,json2,callback){
                 db.close();
             }
         )
+    });
+};
+exports.getAllCount = function(collectionName,callback){
+    _connectDB(function(err,db){
+        db.collection(collectionName).count({}).then(function(count){
+            console.log(count);
+            callback(count);
+            db.close();
+        });
     });
 };

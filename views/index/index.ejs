@@ -7,30 +7,9 @@
 </head>
 <body>
 <!-- 未登录 -->
-<%- include('header') %>
+<%- include('../include/header') %>
 <div class="container">
-    <div class="headBox clearfix">
-        <a href="/" class="logo fl"></a>
-        <a href="/mybooks" class="fr mybooks">我的书架</a>
-        <div class="searchBox clearfix">
-
-            <input type="text" class="fl txt" name="" id="search_txt" placeholder="青春无悔">
-            <input type="submit" class="sub_btn" name="" id="search_btn" value="">
-            <div></div>
-        </div>
-    </div>
-    <div class="menuBox clearfix">
-        <span class="zuopintip fl tc fw">作品分类</span>
-        <nav class="menu fl clearfix">
-            <a href="/" title="女生言情网">女生</a>
-            <a href="/" title="小说书库">书库</a>
-            <a href="/" title="小说排行榜">排行</a>
-            <a href="/" title="全本小说">完本</a>
-            <a href="/">福利</a>
-            <a href="/">成为作者</a>
-        </nav>
-        <a href="/" class="fr chongzhi tc">充值</a>
-    </div>
+    <%- include('../include/headBox') %>
     <div class="contentBox clearfix">
         <div class="types fl">
             <ul class="typelist clearfix">
@@ -63,12 +42,6 @@
             <div class="news">
                 <a href="/" class="title" target="_blank">新闻公告</a>
                 <ul>
-                    <li class="active">
-                        <a href="/"  target="_blank" title="“第十五届中国微型小说年度奖（2016）”评选征集参评作品公告">“第十五届中国微型小说年度奖（2016）”评选征集参评作品公告</a>
-                    </li>
-                    <li>
-                        <a href="/"  target="_blank" title="“金熊猫”网络文学奖参评作品征集公告">“金熊猫”网络文学奖参评作品征集公告</a></li><li><a href="http://www.kanshu.com/newstest/420"  target="_blank" title="全网顶级大神，让你对书荒说NO!（玄幻篇）">全网顶级大神，让你对书荒说NO!（玄幻篇）</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -738,19 +711,6 @@
             </ul>
         </div>
     </div>
-    <div class="guanggao clearfix"><script>
-        (function() {
-            var s = "_" + Math.random().toString(36).slice(2);
-            document.write('<div id="' + s + '"></div>');
-            (window.slotbydup=window.slotbydup || []).push({
-                id: '3278969',
-                container: s,
-                size: '1200,100',
-                display: 'inlay-fix'
-            });
-        })();
-    </script>
-        <script src="http://dup.baidustatic.com/js/os.js"></script></div>
     <div class="menuHeader">
         <div class="typeMenu clearfix">
             <div class="fl menus clearfix">
@@ -940,12 +900,34 @@
         </div>
     </div>
 </div>
-<%- include('footer') %>
+<%- include('../include/footer') %>
 
 
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.bookblock.js"></script>
 <script type="text/javascript" src="js/index.js"></script>
+<script>
+    $.ajax({
+        url : "/getNew",
+        method : "get",
+        data : {},
+        success: function(data){
+            var shtml = ""
+            for(var i = 0;i<data.length;i++){
+                if(i == 0){
+                    shtml += '<li class="active">' +
+                            '<a href="/"  target="_blank">'+data[0].title+'</a></li>';
+                }else{
+                    shtml += '<li><a href="/"  target="_blank" title="'+data[i].title+'">'+data[i].title+'</a> </li>'
+                }
+            }
+            $(".news > ul").html(shtml);
+            shtml = "";
+        },
+        error: function(data){
+        }
+    });
+</script>
 </body>
 </html>
