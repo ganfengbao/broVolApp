@@ -9,20 +9,22 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 var router = require('./router');
 
+/*session功能*/
 app.use(session({
     secret:'keyboard cat',
     resave:false,
     saveUninitialized:true
 }));
 
+/*静态资源路径*/
 app.use(express.static('./public'));
 app.set('view engine','ejs');
 
-app.get('/',function(req,res,next){
-    res.render('index');
-});
+app.get('/',router.showIndex);
 
 app.get('/reg',router.showRegister);
 app.post("/doReg",router.doRegister);
+app.get('/login',router.showLogin);
+app.post('/doLogin',router.doLogin);
 
 app.listen(3000);

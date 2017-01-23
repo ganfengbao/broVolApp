@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>读万卷app-登录</title>
+    <link href="http://img.kanshu.com/new/user/css/login_new.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="contain">
+    <div class="top">
+        <div class="logo"><a href="/"><img src="http://img.kanshu.com/new/user/images/logo_zc.png" border="0"  class="logo"/></a></div>
+        <div class="yd_nav"> <span><a target="_blank" href="/">首页</a></span><i>|</i> <span><a target="_blank" href="http://top.kanshu.com/">排行榜</a></span><i>|</i> <span><a target="_blank" href="http://quanben.kanshu.com/">全本</a></span><i>|</i> <span><a target="_blank" href="http://all.kanshu.com/">书库</a></span><i>|</i>
+            <div id="gengduo" class="sp_more" > <a class="n_a" href="#">更多</a>
+                <ul class="yd_snav2" id="nav_s1">
+                    <li><a target="_blank" href="/">玄幻 · 奇幻</a></li>
+                    <li><a target="_blank" href="/">武侠 · 仙侠</a></li>
+                    <li><a target="_blank" href="/">都市</a> · <a target="_blank" href="/">言情</a></li>
+                    <li><a target="_blank" href="/">历史 · 军事</a></li>
+                    <li><a target="_blank" href="/">网游 · 竞技</a></li>
+                    <li><a target="_blank" href="/">科幻 · 灵异</a></li>
+                    <li><a target="_blank" href="/">女生言情小说</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="cont denglu">
+        <div class="cont_left">
+            <h2 class="mt30">用户登录</h2>
+            <!-- 登录表单开始 -->
+            <form >
+                <ul class="list">
+                    <li>
+                        <span class="r1">用户名：</span>
+                        <span class="r2"><input type="text" id="username" name="username" style="color:#BBBBBB;"/></span>
+                        <p id="v_uname" style="display:none;" style="padding-left:10px;">用户名不可为空</p>
+                    </li>
+                    <li>
+                        <span class="r1">密&nbsp;&nbsp;码：</span>
+                        <span class="r2"><input type="password" id="pw" name="pw"/></span>
+                        <p id="v_passwd" style="display:none;" style="padding-left:10px;">密码不可为空</p>
+                    </li>
+                    <!--<li id="show_yzm" style="display:none;">-->
+                        <!--<span class="r1">验证码：</span>-->
+                        <!--<span class="r2b"><input type="text" id="validCode" maxlength="4" name="validCode"></span>-->
+                        <!--<a href="javascript:void(0);" onclick="changeYzm();return false;" class="yzm" hidefocus="true">-->
+                            <!--<img onclick="changeYzm();" src="/new/login/vdimgck" id="captchaImg" width="48" height="25" />换一张</a>-->
+                    <!--</li>-->
+                    <li><span class="r1"></span>
+                        <input type="button" id="login" value="立即登录" class="button_login" />
+                        <a href="/forget">忘记密码？</a>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="cont_right">
+            <h2>用户注册</h2>
+            <ul>
+                <li>没有账号？ </li>
+                <li><a href="/reg" title="立即注册" class="button_regist">立即注册</a></li>
+            </ul>
+
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/jquery.base64.js"></script>
+</body>
+</html>

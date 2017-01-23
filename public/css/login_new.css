@@ -1,5 +1,4 @@
 @charset "utf-8";
-/*看书网注册登录css*/
 *{margin:0; padding:0;}
 body{margin:0px; padding:0px; font-size:12px; line-height:22px;color:#888; background:#f5f5f5;}
 a{text-decoration:none;color:#333;}
@@ -32,7 +31,7 @@ ul,li,img,dl,dd,dt,div{margin:0px; padding:0px; border:0px; list-style:none;}
 .yd_nav i {font-style:normal; float:left; line-height:34px;}
 .yd_nav .sp_more {float: left;height: 28px;width: 50px;position:relative;z-index: 999;}
 .yd_nav .sp_more .n_a {display:block; position:absolute; top:0; padding:4px 4px 0px 6px; height:24px; width:40px;  background:url(../images/login.png) no-repeat -255px -94px; }
-.yd_nav .sp_more.m2 .n_a {background:#FFFFFF;border-left: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-top:1px solid #ccc;padding:3px 4px 0px 5px;z-index:999;width: 39px; position:absolute; background:url(../images/login.png) no-repeat -256px -133px #fff;  
+.yd_nav .sp_more.m2 .n_a {background:#FFFFFF;border-left: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;border-top:1px solid #ccc;padding:3px 4px 0px 5px;z-index:999;width: 39px; position:absolute; background:url(../images/login.png) no-repeat -256px -133px #fff;
 }
 .yd_snav2 {background:#fff;border:1px solid #ccc;right: 0px;margin: 0;padding: 4px;display:none;position: absolute;top: 27px;width: 150px;z-index: 3;}
 #nav_s1 {width: 120px;}
@@ -118,7 +117,7 @@ ul,li,img,dl,dd,dt,div{margin:0px; padding:0px; border:0px; list-style:none;}
 /*成功*/
 .tur{height:400px;}
 .ico_ture{background:url(../images/login.png) no-repeat 0px -221px; width:100px; height:100px; margin:10px auto; margin-top:50px; }
-.f24{font-size:30px; color:#ff6600; line-height:40px; height:40px; margin-bottom:10px; padding:5px 0px;font-family:"微软雅黑"; font-weight:bold;text-align:center;} 
+.f24{font-size:30px; color:#ff6600; line-height:40px; height:40px; margin-bottom:10px; padding:5px 0px;font-family:"微软雅黑"; font-weight:bold;text-align:center;}
 .f14{text-align:center; font-size:14px; line-height:26px; color:#333;}
 .f14 a{color:#FF6600;}
 .black{color:#333;}
